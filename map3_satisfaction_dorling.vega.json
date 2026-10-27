@@ -1,0 +1,229 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Dorling cartogram: 79 Victorian councils, 2024–25 G2 consultation satisfaction. Circle area and colour represent score. Collision-displaced positions are approximate; pale boundaries serve as geographic reference.",
+  "width": 690,
+  "height": 530,
+  "padding": {
+    "left": 10,
+    "top": 12,
+    "right": 10,
+    "bottom": 42
+  },
+  "autosize": "pad",
+  "background": "#ffffff",
+  "signals": [
+    {
+      "name": "collisionGap",
+      "value": 1.5
+    }
+  ],
+  "data": [
+    {
+      "name": "shapes",
+      "url": "vic_council_satisfaction_2024_25.geojson",
+      "format": {
+        "type": "json",
+        "property": "features"
+      },
+      "transform": [
+        {
+          "type": "geojson",
+          "signal": "geodata"
+        }
+      ]
+    },
+    {
+      "name": "councils",
+      "source": "shapes",
+      "transform": [
+        {
+          "type": "formula",
+          "as": "score",
+          "expr": "datum.properties.satisfaction_g2"
+        },
+        {
+          "type": "formula",
+          "as": "council",
+          "expr": "datum.properties.council"
+        },
+        {
+          "type": "formula",
+          "as": "group",
+          "expr": "datum.properties.group"
+        },
+        {
+          "type": "formula",
+          "as": "centroid",
+          "expr": "geoCentroid('projection', datum)"
+        }
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "type": "mercator",
+      "size": {
+        "signal": "[width,height]"
+      },
+      "fit": {
+        "signal": "geodata"
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "size",
+      "type": "linear",
+      "domain": [
+        0,
+        100
+      ],
+      "range": [
+        100,
+        2100
+      ],
+      "zero": true
+    },
+    {
+      "name": "color",
+      "type": "linear",
+      "domain": [
+        20,
+        80
+      ],
+      "clamp": true,
+      "range": [
+        "#cfe9e2",
+        "#007887"
+      ],
+      "nice": false
+    }
+  ],
+  "legends": [
+    {
+      "title": "Score (out of 100)",
+      "fill": "color",
+      "orient": "bottom",
+      "direction": "horizontal",
+      "gradientLength": 270,
+      "gradientThickness": 12,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    }
+  ],
+  "marks": [
+    {
+      "type": "shape",
+      "name": "council_reference",
+      "from": {
+        "data": "shapes"
+      },
+      "transform": [
+        {
+          "type": "geoshape",
+          "projection": "projection"
+        }
+      ],
+      "encode": {
+        "enter": {
+          "fill": {
+            "value": "#f4f9fa"
+          },
+          "fillOpacity": {
+            "value": 0.45
+          },
+          "stroke": {
+            "value": "#a6c7d0"
+          },
+          "strokeOpacity": {
+            "value": 0.33
+          },
+          "strokeWidth": {
+            "value": 0.5
+          }
+        },
+        "update": {
+          "fillOpacity": {
+            "value": 0.45
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "name": "circles",
+      "from": {
+        "data": "councils"
+      },
+      "encode": {
+        "enter": {
+          "shape": {
+            "value": "circle"
+          },
+          "size": {
+            "scale": "size",
+            "field": "score"
+          },
+          "fill": {
+            "scale": "color",
+            "field": "score"
+          },
+          "stroke": {
+            "value": "#ffffff"
+          },
+          "strokeWidth": {
+            "value": 1.1
+          },
+          "x": {
+            "field": "centroid[0]"
+          },
+          "y": {
+            "field": "centroid[1]"
+          },
+          "tooltip": {
+            "signal": "{'Council':datum.council,'Council type':datum.group,'Satisfaction score':datum.score,'Year':'2024–25'}"
+          }
+        },
+        "update": {
+          "fillOpacity": {
+            "value": 0.92
+          },
+          "cursor": {
+            "value": "pointer"
+          }
+        }
+      },
+      "transform": [
+        {
+          "type": "force",
+          "static": true,
+          "iterations": 450,
+          "forces": [
+            {
+              "force": "collide",
+              "radius": {
+                "expr": "sqrt(datum.size / 3.141592653589793) + collisionGap"
+              },
+              "strength": 1,
+              "iterations": 3
+            },
+            {
+              "force": "x",
+              "x": "datum.centroid[0]",
+              "strength": 0.18
+            },
+            {
+              "force": "y",
+              "y": "datum.centroid[1]",
+              "strength": 0.18
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {
+    "font": "Arial"
+  }
+}

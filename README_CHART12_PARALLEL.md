@@ -1,0 +1,1 @@
+Chart 12: Wider plot, more legible council-group legend and a four-value selected-council profile. Each reported value comes from the original parallel coordinates CSV; original normalization and dropdown highlighting retained.

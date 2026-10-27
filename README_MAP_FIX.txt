@@ -1,0 +1,1 @@
+Maps 1 and 2 now use explicit Vega-Lite dimensions (820 x 590) to avoid container-sizing issues. Each chart loads independently and displays its own error. Run index.html with VS Code Live Server, not file://. Existing chart 12 selector retained.

@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bump chart showing rankings of eight highest 2024\u201325 councils plus four notable ranking movers based on LB8 visits per capita, two years 2023\u201324 and 2024\u201325. Rankings computed across all 79 councils, not just the selected twelve.",
+  "data": {
+    "url": "library_visits_rank_2023_2025.csv"
+  },
+  "width": 810,
+  "height": 480,
+  "encoding": {
+    "x": {
+      "field": "financial_year",
+      "type": "ordinal",
+      "sort": [
+        "2023\u201324",
+        "2024\u201325"
+      ],
+      "axis": {
+        "title": "Financial year",
+        "labelFontSize": 12,
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "rank",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          1,
+          60
+        ],
+        "reverse": true
+      },
+      "axis": {
+        "title": "Rank among 79 councils (1 = most visits)",
+        "tickMinStep": 5,
+        "grid": true
+      }
+    },
+    "color": {
+      "field": "movement",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Climbed",
+          "Dropped",
+          "Unchanged"
+        ],
+        "range": [
+          "#087e86",
+          "#d0775e",
+          "#81929b"
+        ]
+      },
+      "legend": {
+        "title": "Change in rank",
+        "orient": "bottom"
+      }
+    },
+    "detail": {
+      "field": "council"
+    },
+    "tooltip": [
+      {
+        "field": "council",
+        "title": "Council"
+      },
+      {
+        "field": "financial_year",
+        "title": "Year"
+      },
+      {
+        "field": "rank",
+        "title": "Rank (of 79)"
+      },
+      {
+        "field": "visits_per_resident",
+        "title": "Visits per resident",
+        "format": ".2f"
+      },
+      {
+        "field": "previous_rank",
+        "title": "2023\u201324 rank"
+      },
+      {
+        "field": "latest_rank",
+        "title": "2024\u201325 rank"
+      },
+      {
+        "field": "rank_change",
+        "title": "Places climbed"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.3,
+        "opacity": 0.76
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 90,
+        "stroke": "white",
+        "strokeWidth": 0.9
+      }
+    }
+  ],
+  "config": {
+    "background": "white",
+    "axis": {
+      "labelColor": "#284b60",
+      "titleColor": "#12354a",
+      "gridColor": "#e5eff2"
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

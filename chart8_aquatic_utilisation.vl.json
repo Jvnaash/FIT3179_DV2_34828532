@@ -1,0 +1,305 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Tukey box and whisker summaries of 2024–25 aquatic visits per resident, overlaid with jittered council points; 74 applicable councils.",
+  "width": 885,
+  "height": 330,
+  "layer": [
+    {
+      "data": {
+        "url": "aquatic_utilisation_box_summary_2024_25.csv"
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#277f90",
+        "strokeWidth": 1.4
+      },
+      "encoding": {
+        "x": {
+          "field": "min_whisker",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              17
+            ],
+            "nice": false,
+            "zero": true
+          },
+          "axis": {
+            "title": "Aquatic facility visits per resident (2024–25)",
+            "values": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "format": ".0f",
+            "grid": true,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "labelPadding": 6,
+            "titlePadding": 12
+          }
+        },
+        "x2": {
+          "field": "max_whisker"
+        },
+        "y": {
+          "field": "council_group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelFontSize": 12,
+            "labelPadding": 10
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "aquatic_utilisation_box_summary_2024_25.csv"
+      },
+      "mark": {
+        "type": "bar",
+        "size": 33,
+        "fill": "#9acbd2",
+        "stroke": "#277f90"
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              17
+            ],
+            "nice": false,
+            "zero": true
+          },
+          "axis": {
+            "title": "Aquatic facility visits per resident (2024–25)",
+            "values": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "format": ".0f",
+            "grid": true,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "labelPadding": 6,
+            "titlePadding": 12
+          }
+        },
+        "x2": {
+          "field": "q3"
+        },
+        "y": {
+          "field": "council_group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelFontSize": 12,
+            "labelPadding": 10
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "aquatic_utilisation_box_summary_2024_25.csv"
+      },
+      "mark": {
+        "type": "tick",
+        "color": "#14394d",
+        "thickness": 2.4,
+        "size": 33
+      },
+      "encoding": {
+        "x": {
+          "field": "median",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              17
+            ],
+            "nice": false,
+            "zero": true
+          },
+          "axis": {
+            "title": "Aquatic facility visits per resident (2024–25)",
+            "values": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "format": ".0f",
+            "grid": true,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "labelPadding": 6,
+            "titlePadding": 12
+          }
+        },
+        "y": {
+          "field": "council_group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelFontSize": 12,
+            "labelPadding": 10
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "aquatic_utilisation_2024_25.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "size": 58,
+        "opacity": 0.73,
+        "color": "#127e90",
+        "stroke": "white",
+        "strokeWidth": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "visits_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              17
+            ],
+            "nice": false,
+            "zero": true
+          },
+          "axis": {
+            "title": "Aquatic facility visits per resident (2024–25)",
+            "values": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "format": ".0f",
+            "grid": true,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "labelPadding": 6,
+            "titlePadding": 12
+          }
+        },
+        "y": {
+          "field": "council_group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelFontSize": 12,
+            "labelPadding": 10
+          }
+        },
+        "yOffset": {
+          "field": "jitter",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -0.3,
+              0.3
+            ],
+            "range": [
+              -14,
+              14
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "council",
+            "title": "Council"
+          },
+          {
+            "field": "council_group",
+            "title": "Council group"
+          },
+          {
+            "field": "visits_per_resident",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Visits per resident"
+          },
+          {
+            "field": "year",
+            "title": "Financial year"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "gridColor": "#e5eef2",
+      "labelColor": "#16394e",
+      "titleColor": "#16394e"
+    },
+    "font": "Arial"
+  }
+}

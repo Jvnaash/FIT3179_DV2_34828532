@@ -1,0 +1,1 @@
+Chart 10 on webpage: aquatic utilisation box plots. Added labelled 0–16 X-axis on all layers; widened plot to 885; verified group median cards 7.44 Metro and 2.24 Small Shire. Tukey whiskers based on precomputed summary; 74 councils. No change to other charts. Browser test still required.

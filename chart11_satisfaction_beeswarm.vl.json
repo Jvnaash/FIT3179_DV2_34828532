@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Council satisfaction scores shown by council group; evenly sized circles with deterministic collision-reducing vertical offsets. Scores are reported out of 100 for 2024–25.",
+  "data": {
+    "url": "community_satisfaction_beeswarm_2024_25.csv"
+  },
+  "width": 880,
+  "height": 500,
+  "mark": {
+    "type": "circle",
+    "size": 100,
+    "opacity": 0.88,
+    "stroke": "white",
+    "strokeWidth": 0.6
+  },
+  "encoding": {
+    "x": {
+      "field": "satisfaction_score",
+      "type": "quantitative",
+      "title": "Community consultation satisfaction score (out of 100)",
+      "scale": {
+        "domain": [
+          30,
+          85
+        ]
+      },
+      "axis": {
+        "tickCount": 9,
+        "grid": true
+      }
+    },
+    "y": {
+      "field": "swarm_y",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -65,
+          465
+        ],
+        "reverse": true
+      },
+      "axis": {
+        "title": null,
+        "values": [
+          0,
+          100,
+          200,
+          300,
+          400
+        ],
+        "labelExpr": "datum.value == 0 ? 'Metro' : datum.value == 100 ? 'Interface' : datum.value == 200 ? 'Regional City' : datum.value == 300 ? 'Large Shire' : 'Small Shire'",
+        "labelPadding": 12,
+        "grid": false,
+        "ticks": false
+      }
+    },
+    "color": {
+      "field": "council_group",
+      "type": "nominal",
+      "title": "Council group",
+      "scale": {
+        "domain": [
+          "Metro",
+          "Interface",
+          "Regional City",
+          "Large Shire",
+          "Small Shire"
+        ],
+        "range": [
+          "#176A84",
+          "#449FAD",
+          "#A885BD",
+          "#D28B55",
+          "#709789"
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "council",
+        "type": "nominal",
+        "title": "Council"
+      },
+      {
+        "field": "council_group",
+        "type": "nominal",
+        "title": "Council group"
+      },
+      {
+        "field": "satisfaction_score",
+        "type": "quantitative",
+        "title": "Satisfaction score",
+        "format": ".0f"
+      },
+      {
+        "field": "financial_year",
+        "type": "nominal",
+        "title": "Financial year"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#153D54",
+      "titleColor": "#153D54",
+      "gridColor": "#E0ECF0",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Inset focusing on greater Melbourne representative council locations to make overlapping proportional symbols easier to inspect. Same size scale as the statewide map.",
+  "width": 380,
+  "height": 280,
+  "background": "#ffffff",
+  "projection": {
+    "type": "mercator",
+    "center": [
+      145.05,
+      -37.85
+    ],
+    "scale": 13700,
+    "translate": [
+      190,
+      140
+    ],
+    "clipExtent": [
+      [
+        0,
+        0
+      ],
+      [
+        380,
+        280
+      ]
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "vic_council_waste_2024_25.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#eef3f5",
+        "stroke": "#8c9eac",
+        "strokeWidth": 0.65
+      }
+    },
+    {
+      "data": {
+        "url": "garbage_2023_24_by_council.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "color": "#007f91",
+        "opacity": 0.68,
+        "stroke": "#ffffff",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "kg_per_resident",
+          "type": "quantitative",
+          "title": "Garbage collected (kg per resident)",
+          "scale": {
+            "type": "linear",
+            "domain": [
+              0,
+              400
+            ],
+            "range": [
+              20,
+              1600
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "council",
+            "type": "nominal",
+            "title": "Council"
+          },
+          {
+            "field": "kg_per_resident",
+            "type": "quantitative",
+            "title": "Garbage per resident (kg)",
+            "format": ",.1f"
+          },
+          {
+            "field": "garbage_tonnes",
+            "type": "quantitative",
+            "title": "Garbage collected (tonnes)",
+            "format": ",.1f"
+          },
+          {
+            "field": "population",
+            "type": "quantitative",
+            "title": "Population",
+            "format": ","
+          },
+          {
+            "field": "year",
+            "type": "nominal",
+            "title": "Year"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "filter": "datum.longitude >= 144.3 && datum.longitude <= 145.8 && datum.latitude >= -38.35 && datum.latitude <= -37.25"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial"
+  }
+}

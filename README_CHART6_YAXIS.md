@@ -1,0 +1,1 @@
+Chart 6 (garbage violin plots, file chart10_garbage_violin.vl.json): restored shared 0–400 kg/resident Y axis with ticks at 50 kg intervals. Both layers now specify the same axis to prevent Vega-Lite axis merge suppression. All data and other chart specifications unchanged. Verify rendering using Live Server.

@@ -1,0 +1,251 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Four dimensions of local council services",
+    "subtitle": [
+      "Each axis is separately scaled from 0 (lowest observed) to 100 (highest observed).",
+      "This is relative positioning—not a combined performance score."
+    ],
+    "anchor": "start",
+    "fontSize": 15,
+    "subtitleFontSize": 11,
+    "subtitleColor": "#527083"
+  },
+  "data": {
+    "url": "council_parallel_coordinates_2024_25.csv"
+  },
+  "params": [
+    {
+      "name": "selectedCouncil",
+      "value": "All councils"
+    }
+  ],
+  "width": "container",
+  "height": 440,
+  "encoding": {
+    "x": {
+      "field": "indicator",
+      "type": "ordinal",
+      "sort": [
+        "Waste diversion",
+        "Library membership",
+        "Aquatic visits",
+        "Consultation satisfaction"
+      ],
+      "axis": {
+        "title": null,
+        "labelAngle": 0,
+        "labelFontSize": 12,
+        "labelLimit": 190,
+        "labelPadding": 10
+      }
+    },
+    "y": {
+      "field": "normalized",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          100
+        ]
+      },
+      "axis": {
+        "title": "Position within observed council range (0–100)",
+        "values": [
+          0,
+          25,
+          50,
+          75,
+          100
+        ],
+        "grid": true
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 1.2,
+        "opacity": 0.12
+      },
+      "encoding": {
+        "detail": {
+          "field": "council"
+        },
+        "color": {
+          "field": "council_group",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Metro",
+              "Interface",
+              "Regional City",
+              "Large Shire",
+              "Small Shire"
+            ],
+            "range": [
+              "#176e88",
+              "#55a9b6",
+              "#8579b2",
+              "#da8a5f",
+              "#719584"
+            ]
+          }
+        }
+      },
+      "transform": []
+    },
+    {
+      "transform": [
+        {
+          "filter": "selectedCouncil !== \"All councils\" && datum.council === selectedCouncil"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 4
+      },
+      "encoding": {
+        "detail": {
+          "field": "council"
+        },
+        "color": {
+          "field": "council_group",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Metro",
+              "Interface",
+              "Regional City",
+              "Large Shire",
+              "Small Shire"
+            ],
+            "range": [
+              "#176e88",
+              "#55a9b6",
+              "#8579b2",
+              "#da8a5f",
+              "#719584"
+            ]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "selectedCouncil !== \"All councils\" && datum.council === selectedCouncil"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 95
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "council",
+            "title": "Council"
+          },
+          {
+            "field": "indicator",
+            "title": "Service measure"
+          },
+          {
+            "field": "raw_value",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Reported figure"
+          },
+          {
+            "field": "unit",
+            "title": "Unit"
+          },
+          {
+            "field": "normalized",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Relative position (0–100)"
+          }
+        ],
+        "color": {
+          "field": "council_group",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Metro",
+              "Interface",
+              "Regional City",
+              "Large Shire",
+              "Small Shire"
+            ],
+            "range": [
+              "#176e88",
+              "#55a9b6",
+              "#8579b2",
+              "#da8a5f",
+              "#719584"
+            ]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "selectedCouncil === \"All councils\""
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "size": 14,
+        "opacity": 0.15
+      },
+      "encoding": {
+        "color": {
+          "field": "council_group",
+          "type": "nominal",
+          "legend": null
+        },
+        "detail": {
+          "field": "council"
+        },
+        "tooltip": [
+          {
+            "field": "council"
+          },
+          {
+            "field": "indicator"
+          },
+          {
+            "field": "raw_value",
+            "format": ".2f"
+          },
+          {
+            "field": "unit"
+          },
+          {
+            "field": "normalized",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial",
+    "axis": {
+      "labelColor": "#16394a",
+      "titleColor": "#16394a",
+      "gridColor": "#e5eff2"
+    }
+  }
+}

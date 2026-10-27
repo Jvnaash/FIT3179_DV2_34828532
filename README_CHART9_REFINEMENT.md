@@ -1,0 +1,1 @@
+Chart 9: Verified group medians from 79 original ECDF records; Interface 23.3659 (9), Metro 43.2781 (22). Updated y-axis to 0–102 with ticks to 100 to show 100% endpoint clearly; text and responsive findings strip added. Tooltip and other chart data unchanged. Browser visual check recommended.

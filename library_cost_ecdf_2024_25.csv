@@ -1,0 +1,80 @@
+council,council_group,cost_per_resident,cum_percent,councils_at_or_below,group_total,financial_year
+Knox City,Metro,22.8539,4.545455,1,22,2024–25
+Maroondah City,Metro,26.447,9.090909,2,22,2024–25
+Whitehorse City,Metro,26.7101,13.636364,3,22,2024–25
+Manningham City,Metro,28.6531,18.181818,4,22,2024–25
+Frankston City,Metro,31.6502,22.727273,5,22,2024–25
+Monash City,Metro,34.2172,27.272727,6,22,2024–25
+Glen Eira City,Metro,34.9058,31.818182,7,22,2024–25
+Merri-bek City,Metro,35.0391,36.363636,8,22,2024–25
+Stonnington City,Metro,39.7186,40.909091,9,22,2024–25
+Banyule City,Metro,41.6951,45.454545,10,22,2024–25
+Darebin City,Metro,43.0181,50.0,11,22,2024–25
+Bayside City,Metro,43.5381,54.545455,12,22,2024–25
+Brimbank City,Metro,43.7421,59.090909,13,22,2024–25
+Kingston City,Metro,46.1951,63.636364,14,22,2024–25
+Moonee Valley City,Metro,46.6438,68.181818,15,22,2024–25
+Port Phillip City,Metro,53.9804,72.727273,16,22,2024–25
+Maribyrnong City,Metro,55.9627,77.272727,17,22,2024–25
+Yarra City,Metro,56.1048,81.818182,18,22,2024–25
+Greater Dandenong City,Metro,58.8252,86.363636,19,22,2024–25
+Boroondara City,Metro,62.7963,90.909091,20,22,2024–25
+Hobsons Bay City,Metro,63.4903,95.454545,21,22,2024–25
+Melbourne City,Metro,85.3837,100.0,22,22,2024–25
+Cardinia Shire,Interface,15.3545,11.111111,1,9,2024–25
+Casey City,Interface,16.524,22.222222,2,9,2024–25
+Whittlesea City,Interface,22.5329,33.333333,3,9,2024–25
+Melton City,Interface,23.1591,44.444444,4,9,2024–25
+Yarra Ranges Shire,Interface,23.3659,55.555556,5,9,2024–25
+Mornington Peninsula Shire,Interface,25.423,66.666667,6,9,2024–25
+Wyndham City,Interface,27.7936,77.777778,7,9,2024–25
+Hume City,Interface,28.3008,88.888889,8,9,2024–25
+Nillumbik Shire,Interface,45.6657,100.0,9,9,2024–25
+Greater Shepparton,Regional City,22.2535,10.0,1,10,2024–25
+Greater Bendigo City,Regional City,28.4298,20.0,2,10,2024–25
+Wodonga City,Regional City,31.0434,30.0,3,10,2024–25
+Wangaratta Rural City,Regional City,32.9416,40.0,4,10,2024–25
+Horsham Rural City,Regional City,37.3715,50.0,5,10,2024–25
+Ballarat City,Regional City,37.8676,60.0,6,10,2024–25
+Latrobe City,Regional City,38.6688,70.0,7,10,2024–25
+Greater Geelong City,Regional City,46.2116,80.0,8,10,2024–25
+Warrnambool City,Regional City,50.7364,90.0,9,10,2024–25
+Mildura Rural City,Regional City,55.9937,100.0,10,10,2024–25
+Golden Plains Shire,Large Shire,14.83,5.263158,1,19,2024–25
+Surf Coast Shire,Large Shire,17.9986,10.526316,2,19,2024–25
+Moira Shire,Large Shire,24.35,15.789474,3,19,2024–25
+East Gippsland Shire,Large Shire,25.1307,21.052632,4,19,2024–25
+Moorabool Shire,Large Shire,25.2707,26.315789,5,19,2024–25
+Moyne Shire,Large Shire,26.0787,31.578947,6,19,2024–25
+Macedon Ranges Shire,Large Shire,26.9938,36.842105,7,19,2024–25
+Mitchell Shire,Large Shire,28.0996,42.105263,8,19,2024–25
+Baw Baw Shire,Large Shire,28.3416,47.368421,9,19,2024–25
+Mount Alexander Shire,Large Shire,28.9385,52.631579,10,19,2024–25
+Colac Otway Shire,Large Shire,33.506,57.894737,11,19,2024–25
+Wellington Shire,Large Shire,34.7149,63.157895,12,19,2024–25
+Corangamite Shire,Large Shire,38.8082,68.421053,13,19,2024–25
+Glenelg Shire,Large Shire,40.4765,73.684211,14,19,2024–25
+Bass Coast Shire,Large Shire,41.7998,78.947368,15,19,2024–25
+Campaspe Shire,Large Shire,42.1202,84.210526,16,19,2024–25
+Southern Grampians Shire,Large Shire,44.028,89.473684,17,19,2024–25
+South Gippsland Shire,Large Shire,45.5907,94.736842,18,19,2024–25
+Swan Hill Rural City,Large Shire,67.2449,100.0,19,19,2024–25
+Northern Grampians Shire,Small Shire,21.0899,5.263158,1,19,2024–25
+Loddon Shire,Small Shire,27.9115,10.526316,2,19,2024–25
+Ararat Rural City,Small Shire,30.1954,15.789474,3,19,2024–25
+Yarriambiack Shire,Small Shire,30.724,21.052632,4,19,2024–25
+Strathbogie Shire,Small Shire,31.968,26.315789,5,19,2024–25
+Hepburn Shire,Small Shire,32.7055,31.578947,6,19,2024–25
+Murrindindi Shire,Small Shire,37.3445,36.842105,7,19,2024–25
+Towong Shire,Small Shire,39.971,42.105263,8,19,2024–25
+Hindmarsh Shire,Small Shire,41.1615,47.368421,9,19,2024–25
+Central Goldfields Shire,Small Shire,41.6258,52.631579,10,19,2024–25
+Alpine Shire,Small Shire,42.9398,57.894737,11,19,2024–25
+Mansfield Shire,Small Shire,44.9381,63.157895,12,19,2024–25
+Benalla Rural City,Small Shire,46.3323,68.421053,13,19,2024–25
+Indigo Shire,Small Shire,48.4023,73.684211,14,19,2024–25
+Buloke Shire,Small Shire,49.0242,78.947368,15,19,2024–25
+Gannawarra Shire,Small Shire,60.0792,84.210526,16,19,2024–25
+Pyrenees Shire,Small Shire,63.7845,89.473684,17,19,2024–25
+West Wimmera Shire,Small Shire,77.0026,94.736842,18,19,2024–25
+Borough of Queenscliffe,Small Shire,84.0321,100.0,19,19,2024–25

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "2024-25 proportion of kerbside collection waste diverted from landfill reported in the Victorian Local Government Performance Reporting Framework (WC5).",
+  "width": 760,
+  "height": 550,
+  "background": "#ffffff",
+  "projection": {
+    "type": "mercator"
+  },
+  "data": {
+    "url": "vic_council_waste_2024_25.geojson",
+    "format": {
+      "type": "json",
+      "property": "features"
+    }
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "#ffffff",
+    "strokeWidth": 0.65
+  },
+  "encoding": {
+    "color": {
+      "field": "properties.waste_diversion_pct",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "tealblues",
+        "domain": [
+          0,
+          80
+        ]
+      },
+      "title": "Kerbside waste diverted from landfill (%)",
+      "legend": {
+        "orient": "bottom",
+        "gradientLength": 260,
+        "gradientThickness": 12,
+        "labelFontSize": 12,
+        "titleFontSize": 12,
+        "titleLimit": 400
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.council",
+        "type": "nominal",
+        "title": "Council"
+      },
+      {
+        "field": "properties.group",
+        "type": "nominal",
+        "title": "Council type"
+      },
+      {
+        "field": "diversion_display",
+        "type": "nominal",
+        "title": "Waste diverted"
+      },
+      {
+        "field": "properties.year",
+        "type": "nominal",
+        "title": "Year"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial"
+  },
+  "transform": [
+    {
+      "calculate": "format(datum.properties.waste_diversion_pct, '.1f') + '%'",
+      "as": "diversion_display"
+    }
+  ]
+}

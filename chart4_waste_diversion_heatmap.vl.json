@@ -1,0 +1,209 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Waste diversion across Victorian councils, 2020–21 to 2024–25",
+    "anchor": "start",
+    "fontSize": 16,
+    "color": "#102f43"
+  },
+  "width": 830,
+  "height": {
+    "step": 18
+  },
+  "background": "white",
+  "data": {
+    "url": "waste_diversion_2020_2025.csv"
+  },
+  "mark": {
+    "type": "rect",
+    "stroke": "#ffffff",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "sort": [
+        "2020–21",
+        "2021–22",
+        "2022–23",
+        "2023–24",
+        "2024–25"
+      ],
+      "title": "Financial year",
+      "axis": {
+        "labelAngle": 0,
+        "labelFontSize": 12,
+        "titlePadding": 12,
+        "labelPadding": 6
+      }
+    },
+    "y": {
+      "field": "council",
+      "type": "nominal",
+      "sort": [
+        "Alpine Shire",
+        "Manningham City",
+        "Borough of Queenscliffe",
+        "Knox City",
+        "Monash City",
+        "Macedon Ranges Shire",
+        "Boroondara City",
+        "Bass Coast Shire",
+        "Wodonga City",
+        "Surf Coast Shire",
+        "Yarra Ranges Shire",
+        "Bayside City",
+        "Nillumbik Shire",
+        "Strathbogie Shire",
+        "Mildura Rural City",
+        "Indigo Shire",
+        "Banyule City",
+        "Greater Bendigo City",
+        "Warrnambool City",
+        "Ararat Rural City",
+        "Moira Shire",
+        "Glen Eira City",
+        "Southern Grampians Shire",
+        "Moyne Shire",
+        "Maroondah City",
+        "Towong Shire",
+        "Latrobe City",
+        "Mornington Peninsula Shire",
+        "Benalla Rural City",
+        "Wangaratta Rural City",
+        "Whitehorse City",
+        "Corangamite Shire",
+        "Greater Shepparton",
+        "Kingston City",
+        "Colac Otway Shire",
+        "Hepburn Shire",
+        "Merri-bek City",
+        "Baw Baw Shire",
+        "Frankston City",
+        "Darebin City",
+        "South Gippsland Shire",
+        "East Gippsland Shire",
+        "Greater Geelong City",
+        "Hobsons Bay City",
+        "Casey City",
+        "Campaspe Shire",
+        "Greater Dandenong City",
+        "Cardinia Shire",
+        "Horsham Rural City",
+        "Ballarat City",
+        "Moonee Valley City",
+        "Whittlesea City",
+        "Yarra City",
+        "Central Goldfields Shire",
+        "Buloke Shire",
+        "Hume City",
+        "Maribyrnong City",
+        "Mansfield Shire",
+        "Stonnington City",
+        "Port Phillip City",
+        "Gannawarra Shire",
+        "Melton City",
+        "Brimbank City",
+        "Moorabool Shire",
+        "Mitchell Shire",
+        "Wyndham City",
+        "Pyrenees Shire",
+        "Northern Grampians Shire",
+        "Mount Alexander Shire",
+        "Murrindindi Shire",
+        "Golden Plains Shire",
+        "Melbourne City",
+        "Swan Hill Rural City",
+        "Glenelg Shire",
+        "Wellington Shire",
+        "Loddon Shire",
+        "Hindmarsh Shire",
+        "Yarriambiack Shire",
+        "West Wimmera Shire"
+      ],
+      "title": null,
+      "axis": {
+        "labelFontSize": 12,
+        "labelLimit": 235,
+        "labelPadding": 5
+      }
+    },
+    "color": {
+      "field": "diversion_pct",
+      "type": "quantitative",
+      "title": "Diverted from landfill (%)",
+      "scale": {
+        "domain": [
+          0,
+          100
+        ],
+        "range": [
+          "#eef6f8",
+          "#b5dce0",
+          "#5db0ba",
+          "#12627f",
+          "#073b5a"
+        ],
+        "unknown": "#e6e9eb"
+      },
+      "legend": {
+        "orient": "bottom",
+        "gradientLength": 300,
+        "title": "Waste diverted from landfill (%)",
+        "titleFontSize": 12,
+        "labelFontSize": 11
+      },
+      "condition": {
+        "test": "datum.diversion_pct == null || !isValid(datum.diversion_pct)",
+        "value": "#e6e9eb"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "council",
+        "title": "Council"
+      },
+      {
+        "field": "group",
+        "title": "Council group"
+      },
+      {
+        "field": "year",
+        "title": "Financial year"
+      },
+      {
+        "field": "diversion_pct",
+        "type": "quantitative",
+        "title": "Waste diverted (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#25485b",
+      "titleColor": "#25485b"
+    }
+  },
+  "description": "Waste diversion for 79 Victorian councils across five financial years; blank-labelled cells indicate unavailable observations.",
+  "transform": [
+    {
+      "impute": "diversion_pct",
+      "key": "year",
+      "groupby": [
+        "council"
+      ],
+      "keyvals": [
+        "2020–21",
+        "2021–22",
+        "2022–23",
+        "2023–24",
+        "2024–25"
+      ]
+    }
+  ]
+}

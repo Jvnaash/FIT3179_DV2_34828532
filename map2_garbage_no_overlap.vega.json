@@ -1,0 +1,203 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Four-band, collision-separated graduated-symbol map of 2023–24 kilograms of council-collected garbage per resident. Circle positions are approximate after collision resolution.",
+  "width": 820,
+  "height": 590,
+  "padding": {
+    "left": 25,
+    "top": 30,
+    "right": 24,
+    "bottom": 20
+  },
+  "autosize": "pad",
+  "background": "#ffffff",
+  "data": [
+    {
+      "name": "areas",
+      "url": "vic_council_waste_2024_25.geojson",
+      "format": {
+        "type": "json",
+        "property": "features"
+      },
+      "transform": [
+        {
+          "type": "geojson",
+          "signal": "geodata"
+        }
+      ]
+    },
+    {
+      "name": "councils",
+      "source": "areas",
+      "transform": [
+        {
+          "type": "formula",
+          "as": "council",
+          "expr": "datum.properties.council"
+        },
+        {
+          "type": "formula",
+          "as": "centroid",
+          "expr": "geoCentroid('projection',datum)"
+        },
+        {
+          "type": "formula",
+          "as": "band",
+          "expr": "datum.properties.garbage_band"
+        },
+        {
+          "type": "formula",
+          "as": "kg",
+          "expr": "datum.properties.kg_per_resident"
+        }
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "type": "mercator",
+      "size": {
+        "signal": "[width,height]"
+      },
+      "fit": {
+        "signal": "geodata"
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "binnedSize",
+      "type": "ordinal",
+      "domain": [
+        "0–99",
+        "100–199",
+        "200–299",
+        "300–399"
+      ],
+      "range": [
+        70,
+        160,
+        300,
+        460
+      ]
+    }
+  ],
+  "legends": [
+    {
+      "size": "binnedSize",
+      "title": "Garbage per resident (kg)",
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 4,
+      "symbolFillColor": "#248fa2",
+      "symbolStrokeColor": "#ffffff",
+      "symbolOpacity": 0.88,
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleLimit": 260,
+      "padding": 12
+    }
+  ],
+  "marks": [
+    {
+      "type": "shape",
+      "from": {
+        "data": "areas"
+      },
+      "transform": [
+        {
+          "type": "geoshape",
+          "projection": "projection"
+        }
+      ],
+      "encode": {
+        "enter": {
+          "fill": {
+            "value": "#eef3f5"
+          },
+          "stroke": {
+            "value": "#92a5b4"
+          },
+          "strokeWidth": {
+            "value": 0.65
+          }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "name": "garbageSymbols",
+      "from": {
+        "data": "councils"
+      },
+      "encode": {
+        "enter": {
+          "shape": {
+            "value": "circle"
+          },
+          "size": {
+            "scale": "binnedSize",
+            "field": "band"
+          },
+          "fill": {
+            "value": "#248fa2"
+          },
+          "stroke": {
+            "value": "#ffffff"
+          },
+          "strokeWidth": {
+            "value": 1.15
+          },
+          "x": {
+            "field": "centroid[0]"
+          },
+          "y": {
+            "field": "centroid[1]"
+          },
+          "tooltip": {
+            "signal": "{'Council':datum.council,'Garbage range (kg/resident)':datum.band,'Garbage per resident (kg)':format(datum.properties.kg_per_resident,'.1f'),'Garbage collected (tonnes)':format(datum.properties.garbage_tonnes,',.1f'),'Population':format(datum.properties.population,','),'Year':datum.properties.year}"
+          }
+        },
+        "update": {
+          "fillOpacity": {
+            "value": 0.94
+          },
+          "cursor": {
+            "value": "pointer"
+          }
+        }
+      },
+      "transform": [
+        {
+          "type": "force",
+          "static": true,
+          "iterations": 1600,
+          "forces": [
+            {
+              "force": "collide",
+              "radius": {
+                "expr": "sqrt(datum.size / 3.141592653589793) + 2.0"
+              },
+              "strength": 1,
+              "iterations": 6
+            },
+            {
+              "force": "x",
+              "x": "datum.centroid[0]",
+              "strength": 0.035
+            },
+            {
+              "force": "y",
+              "y": "datum.centroid[1]",
+              "strength": 0.035
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {
+    "font": "Arial"
+  }
+}

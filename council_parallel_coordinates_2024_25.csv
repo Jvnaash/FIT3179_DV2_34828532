@@ -1,0 +1,297 @@
+council,council_group,indicator,indicator_code,order,raw_value,normalized,unit
+Alpine Shire,Small Shire,Waste diversion,WC5,0,74.07,100.0,percent
+Alpine Shire,Small Shire,Library membership,LB7,1,33.184,48.696,percent
+Alpine Shire,Small Shire,Aquatic visits,AF6,2,3.4928,22.41,visits per resident
+Alpine Shire,Small Shire,Consultation satisfaction,G2,3,46.0,22.5,score / 100
+Ararat Rural City,Small Shire,Waste diversion,WC5,0,61.21,77.964,percent
+Ararat Rural City,Small Shire,Library membership,LB7,1,19.117,21.432,percent
+Ararat Rural City,Small Shire,Aquatic visits,AF6,2,5.6655,36.694,visits per resident
+Ararat Rural City,Small Shire,Consultation satisfaction,G2,3,59.0,55.0,score / 100
+Ballarat City,Regional City,Waste diversion,WC5,0,43.25,47.19,percent
+Ballarat City,Regional City,Library membership,LB7,1,24.727,32.305,percent
+Ballarat City,Regional City,Aquatic visits,AF6,2,6.3173,40.979,visits per resident
+Ballarat City,Regional City,Consultation satisfaction,G2,3,48.0,27.5,score / 100
+Banyule City,Metro,Waste diversion,WC5,0,64.94,84.356,percent
+Banyule City,Metro,Library membership,LB7,1,34.72,51.673,percent
+Banyule City,Metro,Aquatic visits,AF6,2,9.0841,59.168,visits per resident
+Banyule City,Metro,Consultation satisfaction,G2,3,72.0,87.5,score / 100
+Bass Coast Shire,Large Shire,Waste diversion,WC5,0,70.09,93.18,percent
+Bass Coast Shire,Large Shire,Library membership,LB7,1,46.877,75.235,percent
+Bass Coast Shire,Large Shire,Aquatic visits,AF6,2,3.3646,21.567,visits per resident
+Bass Coast Shire,Large Shire,Consultation satisfaction,G2,3,51.0,35.0,score / 100
+Baw Baw Shire,Large Shire,Waste diversion,WC5,0,51.02,60.504,percent
+Baw Baw Shire,Large Shire,Library membership,LB7,1,31.445,45.325,percent
+Baw Baw Shire,Large Shire,Aquatic visits,AF6,2,7.2467,47.089,visits per resident
+Baw Baw Shire,Large Shire,Consultation satisfaction,G2,3,42.0,12.5,score / 100
+Benalla Rural City,Small Shire,Waste diversion,WC5,0,55.24,67.735,percent
+Benalla Rural City,Small Shire,Library membership,LB7,1,27.619,37.91,percent
+Benalla Rural City,Small Shire,Aquatic visits,AF6,2,4.8414,31.276,visits per resident
+Benalla Rural City,Small Shire,Consultation satisfaction,G2,3,49.0,30.0,score / 100
+Boroondara City,Metro,Waste diversion,WC5,0,70.38,93.677,percent
+Boroondara City,Metro,Library membership,LB7,1,43.917,69.498,percent
+Boroondara City,Metro,Aquatic visits,AF6,2,15.295,100.0,visits per resident
+Boroondara City,Metro,Consultation satisfaction,G2,3,59.0,55.0,score / 100
+Brimbank City,Metro,Waste diversion,WC5,0,38.7,39.393,percent
+Brimbank City,Metro,Library membership,LB7,1,32.908,48.161,percent
+Brimbank City,Metro,Aquatic visits,AF6,2,9.9179,64.65,visits per resident
+Brimbank City,Metro,Consultation satisfaction,G2,3,74.0,92.5,score / 100
+Buloke Shire,Small Shire,Waste diversion,WC5,0,41.14,43.574,percent
+Buloke Shire,Small Shire,Library membership,LB7,1,8.059,0.0,percent
+Buloke Shire,Small Shire,Aquatic visits,AF6,2,5.049,32.641,visits per resident
+Buloke Shire,Small Shire,Consultation satisfaction,G2,3,43.0,15.0,score / 100
+Campaspe Shire,Large Shire,Waste diversion,WC5,0,46.57,52.879,percent
+Campaspe Shire,Large Shire,Library membership,LB7,1,24.583,32.026,percent
+Campaspe Shire,Large Shire,Aquatic visits,AF6,2,4.0497,26.071,visits per resident
+Campaspe Shire,Large Shire,Consultation satisfaction,G2,3,56.0,47.5,score / 100
+Cardinia Shire,Interface,Waste diversion,WC5,0,45.84,51.628,percent
+Cardinia Shire,Interface,Library membership,LB7,1,22.262,27.527,percent
+Cardinia Shire,Interface,Aquatic visits,AF6,2,5.556,35.974,visits per resident
+Cardinia Shire,Interface,Consultation satisfaction,G2,3,69.0,80.0,score / 100
+Casey City,Interface,Waste diversion,WC5,0,47.34,54.198,percent
+Casey City,Interface,Library membership,LB7,1,23.956,30.811,percent
+Casey City,Interface,Aquatic visits,AF6,2,4.5156,29.134,visits per resident
+Casey City,Interface,Consultation satisfaction,G2,3,40.0,7.5,score / 100
+Central Goldfields Shire,Small Shire,Waste diversion,WC5,0,42.22,45.425,percent
+Central Goldfields Shire,Small Shire,Library membership,LB7,1,19.471,22.118,percent
+Central Goldfields Shire,Small Shire,Aquatic visits,AF6,2,5.1734,33.459,visits per resident
+Central Goldfields Shire,Small Shire,Consultation satisfaction,G2,3,46.0,22.5,score / 100
+Colac Otway Shire,Large Shire,Waste diversion,WC5,0,52.36,62.8,percent
+Colac Otway Shire,Large Shire,Library membership,LB7,1,26.937,36.588,percent
+Colac Otway Shire,Large Shire,Aquatic visits,AF6,2,7.2736,47.266,visits per resident
+Colac Otway Shire,Large Shire,Consultation satisfaction,G2,3,47.0,25.0,score / 100
+Corangamite Shire,Large Shire,Waste diversion,WC5,0,53.83,65.319,percent
+Corangamite Shire,Large Shire,Library membership,LB7,1,38.653,59.295,percent
+Corangamite Shire,Large Shire,Aquatic visits,AF6,2,2.2599,14.305,visits per resident
+Corangamite Shire,Large Shire,Consultation satisfaction,G2,3,54.0,42.5,score / 100
+Darebin City,Metro,Waste diversion,WC5,0,50.2,59.099,percent
+Darebin City,Metro,Library membership,LB7,1,38.405,58.815,percent
+Darebin City,Metro,Aquatic visits,AF6,2,10.846,70.751,visits per resident
+Darebin City,Metro,Consultation satisfaction,G2,3,68.0,77.5,score / 100
+East Gippsland Shire,Large Shire,Waste diversion,WC5,0,49.3,57.557,percent
+East Gippsland Shire,Large Shire,Library membership,LB7,1,26.741,36.208,percent
+East Gippsland Shire,Large Shire,Aquatic visits,AF6,2,10.6367,69.375,visits per resident
+East Gippsland Shire,Large Shire,Consultation satisfaction,G2,3,46.0,22.5,score / 100
+Frankston City,Metro,Waste diversion,WC5,0,50.47,59.561,percent
+Frankston City,Metro,Library membership,LB7,1,21.191,25.452,percent
+Frankston City,Metro,Aquatic visits,AF6,2,7.439,48.353,visits per resident
+Frankston City,Metro,Consultation satisfaction,G2,3,70.0,82.5,score / 100
+Gannawarra Shire,Small Shire,Waste diversion,WC5,0,39.37,40.541,percent
+Gannawarra Shire,Small Shire,Library membership,LB7,1,22.568,28.12,percent
+Gannawarra Shire,Small Shire,Aquatic visits,AF6,2,3.8228,24.58,visits per resident
+Gannawarra Shire,Small Shire,Consultation satisfaction,G2,3,51.0,35.0,score / 100
+Glen Eira City,Metro,Waste diversion,WC5,0,59.6,75.206,percent
+Glen Eira City,Metro,Library membership,LB7,1,24.981,32.797,percent
+Glen Eira City,Metro,Aquatic visits,AF6,2,13.0626,85.324,visits per resident
+Glen Eira City,Metro,Consultation satisfaction,G2,3,55.0,45.0,score / 100
+Glenelg Shire,Large Shire,Waste diversion,WC5,0,27.28,19.825,percent
+Glenelg Shire,Large Shire,Library membership,LB7,1,24.861,32.565,percent
+Glenelg Shire,Large Shire,Aquatic visits,AF6,2,6.2814,40.743,visits per resident
+Glenelg Shire,Large Shire,Consultation satisfaction,G2,3,43.0,15.0,score / 100
+Greater Bendigo City,Regional City,Waste diversion,WC5,0,64.29,83.242,percent
+Greater Bendigo City,Regional City,Library membership,LB7,1,19.786,22.729,percent
+Greater Bendigo City,Regional City,Aquatic visits,AF6,2,6.3583,41.248,visits per resident
+Greater Bendigo City,Regional City,Consultation satisfaction,G2,3,47.0,25.0,score / 100
+Greater Dandenong City,Metro,Waste diversion,WC5,0,46.46,52.69,percent
+Greater Dandenong City,Metro,Library membership,LB7,1,35.64,53.456,percent
+Greater Dandenong City,Metro,Aquatic visits,AF6,2,4.8929,31.615,visits per resident
+Greater Dandenong City,Metro,Consultation satisfaction,G2,3,77.0,100.0,score / 100
+Greater Geelong City,Regional City,Waste diversion,WC5,0,49.08,57.18,percent
+Greater Geelong City,Regional City,Library membership,LB7,1,31.324,45.091,percent
+Greater Geelong City,Regional City,Aquatic visits,AF6,2,7.719,50.194,visits per resident
+Greater Geelong City,Regional City,Consultation satisfaction,G2,3,48.0,27.5,score / 100
+Greater Shepparton,Regional City,Waste diversion,WC5,0,52.67,63.331,percent
+Greater Shepparton,Regional City,Library membership,LB7,1,23.432,29.795,percent
+Greater Shepparton,Regional City,Aquatic visits,AF6,2,6.8838,44.703,visits per resident
+Greater Shepparton,Regional City,Consultation satisfaction,G2,3,54.0,42.5,score / 100
+Hepburn Shire,Small Shire,Waste diversion,WC5,0,51.99,62.166,percent
+Hepburn Shire,Small Shire,Library membership,LB7,1,27.907,38.468,percent
+Hepburn Shire,Small Shire,Aquatic visits,AF6,2,0.9371,5.608,visits per resident
+Hepburn Shire,Small Shire,Consultation satisfaction,G2,3,47.0,25.0,score / 100
+Hindmarsh Shire,Small Shire,Waste diversion,WC5,0,22.92,12.354,percent
+Hindmarsh Shire,Small Shire,Library membership,LB7,1,36.402,54.933,percent
+Hindmarsh Shire,Small Shire,Aquatic visits,AF6,2,2.1354,13.486,visits per resident
+Hindmarsh Shire,Small Shire,Consultation satisfaction,G2,3,59.0,55.0,score / 100
+Horsham Rural City,Regional City,Waste diversion,WC5,0,43.62,47.824,percent
+Horsham Rural City,Regional City,Library membership,LB7,1,19.886,22.922,percent
+Horsham Rural City,Regional City,Aquatic visits,AF6,2,6.1354,39.783,visits per resident
+Horsham Rural City,Regional City,Consultation satisfaction,G2,3,48.0,27.5,score / 100
+Hume City,Interface,Waste diversion,WC5,0,40.48,42.443,percent
+Hume City,Interface,Library membership,LB7,1,23.738,30.388,percent
+Hume City,Interface,Aquatic visits,AF6,2,3.349,21.465,visits per resident
+Hume City,Interface,Consultation satisfaction,G2,3,48.0,27.5,score / 100
+Indigo Shire,Small Shire,Waste diversion,WC5,0,65.05,84.544,percent
+Indigo Shire,Small Shire,Library membership,LB7,1,22.47,27.93,percent
+Indigo Shire,Small Shire,Aquatic visits,AF6,2,1.3455,8.293,visits per resident
+Indigo Shire,Small Shire,Consultation satisfaction,G2,3,50.0,32.5,score / 100
+Kingston City,Metro,Waste diversion,WC5,0,52.53,63.091,percent
+Kingston City,Metro,Library membership,LB7,1,26.907,36.53,percent
+Kingston City,Metro,Aquatic visits,AF6,2,4.0331,25.962,visits per resident
+Kingston City,Metro,Consultation satisfaction,G2,3,74.0,92.5,score / 100
+Knox City,Metro,Waste diversion,WC5,0,71.21,95.099,percent
+Knox City,Metro,Library membership,LB7,1,36.992,56.076,percent
+Knox City,Metro,Aquatic visits,AF6,2,2.2227,14.06,visits per resident
+Knox City,Metro,Consultation satisfaction,G2,3,69.0,80.0,score / 100
+Latrobe City,Regional City,Waste diversion,WC5,0,56.78,70.374,percent
+Latrobe City,Regional City,Library membership,LB7,1,27.848,38.354,percent
+Latrobe City,Regional City,Aquatic visits,AF6,2,4.1303,26.601,visits per resident
+Latrobe City,Regional City,Consultation satisfaction,G2,3,49.0,30.0,score / 100
+Loddon Shire,Small Shire,Waste diversion,WC5,0,25.23,16.313,percent
+Loddon Shire,Small Shire,Library membership,LB7,1,12.456,8.522,percent
+Loddon Shire,Small Shire,Aquatic visits,AF6,2,2.2588,14.298,visits per resident
+Loddon Shire,Small Shire,Consultation satisfaction,G2,3,51.0,35.0,score / 100
+Macedon Ranges Shire,Large Shire,Waste diversion,WC5,0,70.45,93.797,percent
+Macedon Ranges Shire,Large Shire,Library membership,LB7,1,23.642,30.202,percent
+Macedon Ranges Shire,Large Shire,Aquatic visits,AF6,2,8.2269,53.533,visits per resident
+Macedon Ranges Shire,Large Shire,Consultation satisfaction,G2,3,46.0,22.5,score / 100
+Manningham City,Metro,Waste diversion,WC5,0,74.05,99.966,percent
+Manningham City,Metro,Library membership,LB7,1,27.531,37.739,percent
+Manningham City,Metro,Aquatic visits,AF6,2,6.119,39.675,visits per resident
+Manningham City,Metro,Consultation satisfaction,G2,3,56.0,47.5,score / 100
+Mansfield Shire,Small Shire,Waste diversion,WC5,0,40.09,41.775,percent
+Mansfield Shire,Small Shire,Library membership,LB7,1,29.392,41.346,percent
+Mansfield Shire,Small Shire,Aquatic visits,AF6,2,1.2289,7.527,visits per resident
+Mansfield Shire,Small Shire,Consultation satisfaction,G2,3,59.0,55.0,score / 100
+Maribyrnong City,Metro,Waste diversion,WC5,0,40.29,42.118,percent
+Maribyrnong City,Metro,Library membership,LB7,1,40.632,63.131,percent
+Maribyrnong City,Metro,Aquatic visits,AF6,2,8.0468,52.349,visits per resident
+Maribyrnong City,Metro,Consultation satisfaction,G2,3,70.0,82.5,score / 100
+Maroondah City,Metro,Waste diversion,WC5,0,57.52,71.642,percent
+Maroondah City,Metro,Library membership,LB7,1,39.224,60.402,percent
+Maroondah City,Metro,Aquatic visits,AF6,2,10.7998,70.448,visits per resident
+Maroondah City,Metro,Consultation satisfaction,G2,3,58.0,52.5,score / 100
+Melbourne City,Metro,Waste diversion,WC5,0,28.46,21.847,percent
+Melbourne City,Metro,Library membership,LB7,1,51.539,84.27,percent
+Melbourne City,Metro,Aquatic visits,AF6,2,2.3747,15.059,visits per resident
+Melbourne City,Metro,Consultation satisfaction,G2,3,60.0,57.5,score / 100
+Melton City,Interface,Waste diversion,WC5,0,38.81,39.582,percent
+Melton City,Interface,Library membership,LB7,1,23.066,29.086,percent
+Melton City,Interface,Aquatic visits,AF6,2,1.6266,10.141,visits per resident
+Melton City,Interface,Consultation satisfaction,G2,3,70.0,82.5,score / 100
+Merri-bek City,Metro,Waste diversion,WC5,0,51.07,60.589,percent
+Merri-bek City,Metro,Library membership,LB7,1,24.075,31.041,percent
+Merri-bek City,Metro,Aquatic visits,AF6,2,5.7545,37.279,visits per resident
+Merri-bek City,Metro,Consultation satisfaction,G2,3,68.0,77.5,score / 100
+Mildura Rural City,Regional City,Waste diversion,WC5,0,68.27,90.062,percent
+Mildura Rural City,Regional City,Library membership,LB7,1,18.481,20.199,percent
+Mildura Rural City,Regional City,Aquatic visits,AF6,2,7.5348,48.983,visits per resident
+Mildura Rural City,Regional City,Consultation satisfaction,G2,3,48.0,27.5,score / 100
+Mitchell Shire,Large Shire,Waste diversion,WC5,0,35.42,33.773,percent
+Mitchell Shire,Large Shire,Library membership,LB7,1,17.81,18.899,percent
+Mitchell Shire,Large Shire,Aquatic visits,AF6,2,4.5471,29.341,visits per resident
+Mitchell Shire,Large Shire,Consultation satisfaction,G2,3,48.0,27.5,score / 100
+Moira Shire,Large Shire,Waste diversion,WC5,0,59.64,75.274,percent
+Moira Shire,Large Shire,Library membership,LB7,1,29.641,41.829,percent
+Moira Shire,Large Shire,Aquatic visits,AF6,2,1.994,12.557,visits per resident
+Moira Shire,Large Shire,Consultation satisfaction,G2,3,37.0,0.0,score / 100
+Monash City,Metro,Waste diversion,WC5,0,70.45,93.797,percent
+Monash City,Metro,Library membership,LB7,1,36.588,55.293,percent
+Monash City,Metro,Aquatic visits,AF6,2,7.4437,48.384,visits per resident
+Monash City,Metro,Consultation satisfaction,G2,3,74.0,92.5,score / 100
+Moonee Valley City,Metro,Waste diversion,WC5,0,43.06,46.864,percent
+Moonee Valley City,Metro,Library membership,LB7,1,31.322,45.087,percent
+Moonee Valley City,Metro,Aquatic visits,AF6,2,7.6199,49.542,visits per resident
+Moonee Valley City,Metro,Consultation satisfaction,G2,3,70.0,82.5,score / 100
+Moorabool Shire,Large Shire,Waste diversion,WC5,0,36.93,36.361,percent
+Moorabool Shire,Large Shire,Library membership,LB7,1,17.182,17.682,percent
+Moorabool Shire,Large Shire,Aquatic visits,AF6,2,0.3312,1.625,visits per resident
+Moorabool Shire,Large Shire,Consultation satisfaction,G2,3,48.0,27.5,score / 100
+Mornington Peninsula Shire,Interface,Waste diversion,WC5,0,56.33,69.602,percent
+Mornington Peninsula Shire,Interface,Library membership,LB7,1,33.232,48.789,percent
+Mornington Peninsula Shire,Interface,Aquatic visits,AF6,2,5.6612,36.666,visits per resident
+Mornington Peninsula Shire,Interface,Consultation satisfaction,G2,3,66.0,72.5,score / 100
+Mount Alexander Shire,Large Shire,Waste diversion,WC5,0,31.89,27.724,percent
+Mount Alexander Shire,Large Shire,Library membership,LB7,1,37.795,57.632,percent
+Mount Alexander Shire,Large Shire,Aquatic visits,AF6,2,1.1682,7.128,visits per resident
+Mount Alexander Shire,Large Shire,Consultation satisfaction,G2,3,53.0,40.0,score / 100
+Moyne Shire,Large Shire,Waste diversion,WC5,0,58.87,73.955,percent
+Moyne Shire,Large Shire,Library membership,LB7,1,15.516,14.453,percent
+Moyne Shire,Large Shire,Aquatic visits,AF6,2,0.1938,0.722,visits per resident
+Moyne Shire,Large Shire,Consultation satisfaction,G2,3,51.0,35.0,score / 100
+Murrindindi Shire,Small Shire,Waste diversion,WC5,0,31.59,27.21,percent
+Murrindindi Shire,Small Shire,Library membership,LB7,1,16.349,16.067,percent
+Murrindindi Shire,Small Shire,Aquatic visits,AF6,2,2.2289,14.101,visits per resident
+Murrindindi Shire,Small Shire,Consultation satisfaction,G2,3,51.0,35.0,score / 100
+Nillumbik Shire,Interface,Waste diversion,WC5,0,68.95,91.227,percent
+Nillumbik Shire,Interface,Library membership,LB7,1,52.47,86.075,percent
+Nillumbik Shire,Interface,Aquatic visits,AF6,2,12.0603,78.734,visits per resident
+Nillumbik Shire,Interface,Consultation satisfaction,G2,3,68.0,77.5,score / 100
+Northern Grampians Shire,Small Shire,Waste diversion,WC5,0,33.14,29.866,percent
+Northern Grampians Shire,Small Shire,Library membership,LB7,1,28.294,39.218,percent
+Northern Grampians Shire,Small Shire,Aquatic visits,AF6,2,6.6404,43.103,visits per resident
+Northern Grampians Shire,Small Shire,Consultation satisfaction,G2,3,51.0,35.0,score / 100
+Pyrenees Shire,Small Shire,Waste diversion,WC5,0,34.04,31.408,percent
+Pyrenees Shire,Small Shire,Library membership,LB7,1,16.399,16.164,percent
+Pyrenees Shire,Small Shire,Aquatic visits,AF6,2,1.0761,6.522,visits per resident
+Pyrenees Shire,Small Shire,Consultation satisfaction,G2,3,51.0,35.0,score / 100
+South Gippsland Shire,Large Shire,Waste diversion,WC5,0,50.0,58.756,percent
+South Gippsland Shire,Large Shire,Library membership,LB7,1,35.955,54.066,percent
+South Gippsland Shire,Large Shire,Aquatic visits,AF6,2,4.6078,29.74,visits per resident
+South Gippsland Shire,Large Shire,Consultation satisfaction,G2,3,46.0,22.5,score / 100
+Southern Grampians Shire,Large Shire,Waste diversion,WC5,0,58.94,74.075,percent
+Southern Grampians Shire,Large Shire,Library membership,LB7,1,21.858,26.744,percent
+Southern Grampians Shire,Large Shire,Aquatic visits,AF6,2,10.8002,70.45,visits per resident
+Southern Grampians Shire,Large Shire,Consultation satisfaction,G2,3,46.0,22.5,score / 100
+Stonnington City,Metro,Waste diversion,WC5,0,39.84,41.347,percent
+Stonnington City,Metro,Library membership,LB7,1,26.605,35.945,percent
+Stonnington City,Metro,Aquatic visits,AF6,2,5.6499,36.591,visits per resident
+Stonnington City,Metro,Consultation satisfaction,G2,3,54.0,42.5,score / 100
+Strathbogie Shire,Small Shire,Waste diversion,WC5,0,68.59,90.61,percent
+Strathbogie Shire,Small Shire,Library membership,LB7,1,31.246,44.94,percent
+Strathbogie Shire,Small Shire,Aquatic visits,AF6,2,1.5717,9.78,visits per resident
+Strathbogie Shire,Small Shire,Consultation satisfaction,G2,3,50.0,32.5,score / 100
+Surf Coast Shire,Large Shire,Waste diversion,WC5,0,69.67,92.461,percent
+Surf Coast Shire,Large Shire,Library membership,LB7,1,30.237,42.984,percent
+Surf Coast Shire,Large Shire,Aquatic visits,AF6,2,0.084,0.0,visits per resident
+Surf Coast Shire,Large Shire,Consultation satisfaction,G2,3,54.0,42.5,score / 100
+Swan Hill Rural City,Large Shire,Waste diversion,WC5,0,28.4,21.744,percent
+Swan Hill Rural City,Large Shire,Library membership,LB7,1,28.605,39.821,percent
+Swan Hill Rural City,Large Shire,Aquatic visits,AF6,2,9.6311,62.764,visits per resident
+Swan Hill Rural City,Large Shire,Consultation satisfaction,G2,3,53.0,40.0,score / 100
+Towong Shire,Small Shire,Waste diversion,WC5,0,57.47,71.556,percent
+Towong Shire,Small Shire,Library membership,LB7,1,19.545,22.261,percent
+Towong Shire,Small Shire,Aquatic visits,AF6,2,1.852,11.623,visits per resident
+Towong Shire,Small Shire,Consultation satisfaction,G2,3,47.0,25.0,score / 100
+Wangaratta Rural City,Regional City,Waste diversion,WC5,0,54.21,65.97,percent
+Wangaratta Rural City,Regional City,Library membership,LB7,1,24.747,32.344,percent
+Wangaratta Rural City,Regional City,Aquatic visits,AF6,2,14.0941,92.105,visits per resident
+Wangaratta Rural City,Regional City,Consultation satisfaction,G2,3,49.0,30.0,score / 100
+Warrnambool City,Regional City,Waste diversion,WC5,0,63.34,81.614,percent
+Warrnambool City,Regional City,Library membership,LB7,1,47.64,76.713,percent
+Warrnambool City,Regional City,Aquatic visits,AF6,2,5.989,38.821,visits per resident
+Warrnambool City,Regional City,Consultation satisfaction,G2,3,51.0,35.0,score / 100
+Wellington Shire,Large Shire,Waste diversion,WC5,0,26.35,18.232,percent
+Wellington Shire,Large Shire,Library membership,LB7,1,21.804,26.64,percent
+Wellington Shire,Large Shire,Aquatic visits,AF6,2,3.4587,22.186,visits per resident
+Wellington Shire,Large Shire,Consultation satisfaction,G2,3,52.0,37.5,score / 100
+West Wimmera Shire,Small Shire,Waste diversion,WC5,0,15.71,0.0,percent
+West Wimmera Shire,Small Shire,Library membership,LB7,1,24.022,30.938,percent
+West Wimmera Shire,Small Shire,Aquatic visits,AF6,2,2.8653,18.285,visits per resident
+West Wimmera Shire,Small Shire,Consultation satisfaction,G2,3,56.0,47.5,score / 100
+Whitehorse City,Metro,Waste diversion,WC5,0,54.1,65.781,percent
+Whitehorse City,Metro,Library membership,LB7,1,26.715,36.158,percent
+Whitehorse City,Metro,Aquatic visits,AF6,2,9.2448,60.225,visits per resident
+Whitehorse City,Metro,Consultation satisfaction,G2,3,55.0,45.0,score / 100
+Whittlesea City,Interface,Waste diversion,WC5,0,42.31,45.579,percent
+Whittlesea City,Interface,Library membership,LB7,1,22.013,27.045,percent
+Whittlesea City,Interface,Aquatic visits,AF6,2,4.1401,26.666,visits per resident
+Whittlesea City,Interface,Consultation satisfaction,G2,3,47.0,25.0,score / 100
+Wodonga City,Regional City,Waste diversion,WC5,0,69.97,92.975,percent
+Wodonga City,Regional City,Library membership,LB7,1,27.443,37.569,percent
+Wodonga City,Regional City,Aquatic visits,AF6,2,8.8646,57.725,visits per resident
+Wodonga City,Regional City,Consultation satisfaction,G2,3,54.0,42.5,score / 100
+Wyndham City,Interface,Waste diversion,WC5,0,34.46,32.128,percent
+Wyndham City,Interface,Library membership,LB7,1,31.073,44.604,percent
+Wyndham City,Interface,Aquatic visits,AF6,2,3.671,23.582,visits per resident
+Wyndham City,Interface,Consultation satisfaction,G2,3,75.0,95.0,score / 100
+Yarra City,Metro,Waste diversion,WC5,0,42.23,45.442,percent
+Yarra City,Metro,Library membership,LB7,1,59.655,100.0,percent
+Yarra City,Metro,Aquatic visits,AF6,2,6.8931,44.764,visits per resident
+Yarra City,Metro,Consultation satisfaction,G2,3,50.0,32.5,score / 100
+Yarra Ranges Shire,Interface,Waste diversion,WC5,0,69.52,92.204,percent
+Yarra Ranges Shire,Interface,Library membership,LB7,1,26.215,35.189,percent
+Yarra Ranges Shire,Interface,Aquatic visits,AF6,2,2.643,16.823,visits per resident
+Yarra Ranges Shire,Interface,Consultation satisfaction,G2,3,46.0,22.5,score / 100
+Yarriambiack Shire,Small Shire,Waste diversion,WC5,0,16.85,1.953,percent
+Yarriambiack Shire,Small Shire,Library membership,LB7,1,16.513,16.385,percent
+Yarriambiack Shire,Small Shire,Aquatic visits,AF6,2,0.6111,3.465,visits per resident
+Yarriambiack Shire,Small Shire,Consultation satisfaction,G2,3,57.0,50.0,score / 100

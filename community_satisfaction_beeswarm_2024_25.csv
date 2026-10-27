@@ -1,0 +1,80 @@
+council,council_group,financial_year,satisfaction_score,swarm_y
+Yarra City,Metro,2024–25,50,0.0
+Stonnington City,Metro,2024–25,54,0.0
+Glen Eira City,Metro,2024–25,55,0.0
+Hobsons Bay City,Metro,2024–25,55,9.5
+Whitehorse City,Metro,2024–25,55,-9.5
+Manningham City,Metro,2024–25,56,0.0
+Maroondah City,Metro,2024–25,58,0.0
+Boroondara City,Metro,2024–25,59,0.0
+Melbourne City,Metro,2024–25,60,0.0
+Darebin City,Metro,2024–25,68,0.0
+Merri-bek City,Metro,2024–25,68,9.5
+Knox City,Metro,2024–25,69,0.0
+Port Phillip City,Metro,2024–25,69,9.5
+Frankston City,Metro,2024–25,70,0.0
+Maribyrnong City,Metro,2024–25,70,9.5
+Moonee Valley City,Metro,2024–25,70,-9.5
+Banyule City,Metro,2024–25,72,0.0
+Bayside City,Metro,2024–25,72,9.5
+Brimbank City,Metro,2024–25,74,0.0
+Kingston City,Metro,2024–25,74,9.5
+Monash City,Metro,2024–25,74,-9.5
+Greater Dandenong City,Metro,2024–25,77,0.0
+Casey City,Interface,2024–25,40,100.0
+Yarra Ranges Shire,Interface,2024–25,46,100.0
+Whittlesea City,Interface,2024–25,47,100.0
+Hume City,Interface,2024–25,48,100.0
+Mornington Peninsula Shire,Interface,2024–25,66,100.0
+Nillumbik Shire,Interface,2024–25,68,100.0
+Cardinia Shire,Interface,2024–25,69,100.0
+Melton City,Interface,2024–25,70,100.0
+Wyndham City,Interface,2024–25,75,100.0
+Greater Bendigo City,Regional City,2024–25,47,200.0
+Ballarat City,Regional City,2024–25,48,200.0
+Greater Geelong City,Regional City,2024–25,48,209.5
+Horsham Rural City,Regional City,2024–25,48,190.5
+Mildura Rural City,Regional City,2024–25,48,219.0
+Latrobe City,Regional City,2024–25,49,200.0
+Wangaratta Rural City,Regional City,2024–25,49,209.5
+Warrnambool City,Regional City,2024–25,51,200.0
+Greater Shepparton,Regional City,2024–25,54,200.0
+Wodonga City,Regional City,2024–25,54,209.5
+Moira Shire,Large Shire,2024–25,37,300.0
+Golden Plains Shire,Large Shire,2024–25,39,300.0
+Baw Baw Shire,Large Shire,2024–25,42,300.0
+Glenelg Shire,Large Shire,2024–25,43,300.0
+East Gippsland Shire,Large Shire,2024–25,46,300.0
+Macedon Ranges Shire,Large Shire,2024–25,46,309.5
+South Gippsland Shire,Large Shire,2024–25,46,290.5
+Southern Grampians Shire,Large Shire,2024–25,46,319.0
+Colac Otway Shire,Large Shire,2024–25,47,300.0
+Mitchell Shire,Large Shire,2024–25,48,300.0
+Moorabool Shire,Large Shire,2024–25,48,309.5
+Bass Coast Shire,Large Shire,2024–25,51,300.0
+Moyne Shire,Large Shire,2024–25,51,309.5
+Wellington Shire,Large Shire,2024–25,52,300.0
+Mount Alexander Shire,Large Shire,2024–25,53,300.0
+Swan Hill Rural City,Large Shire,2024–25,53,309.5
+Corangamite Shire,Large Shire,2024–25,54,300.0
+Surf Coast Shire,Large Shire,2024–25,54,309.5
+Campaspe Shire,Large Shire,2024–25,56,300.0
+Buloke Shire,Small Shire,2024–25,43,400.0
+Alpine Shire,Small Shire,2024–25,46,400.0
+Central Goldfields Shire,Small Shire,2024–25,46,409.5
+Hepburn Shire,Small Shire,2024–25,47,400.0
+Towong Shire,Small Shire,2024–25,47,409.5
+Benalla Rural City,Small Shire,2024–25,49,400.0
+Indigo Shire,Small Shire,2024–25,50,400.0
+Strathbogie Shire,Small Shire,2024–25,50,409.5
+Gannawarra Shire,Small Shire,2024–25,51,400.0
+Loddon Shire,Small Shire,2024–25,51,409.5
+Murrindindi Shire,Small Shire,2024–25,51,390.5
+Northern Grampians Shire,Small Shire,2024–25,51,419.0
+Pyrenees Shire,Small Shire,2024–25,51,381.0
+Borough of Queenscliffe,Small Shire,2024–25,53,400.0
+West Wimmera Shire,Small Shire,2024–25,56,400.0
+Yarriambiack Shire,Small Shire,2024–25,57,400.0
+Ararat Rural City,Small Shire,2024–25,59,400.0
+Hindmarsh Shire,Small Shire,2024–25,59,409.5
+Mansfield Shire,Small Shire,2024–25,59,390.5

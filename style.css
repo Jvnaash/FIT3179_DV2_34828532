@@ -1,0 +1,131 @@
+
+:root{--ink:#12374a;--deep:#073b52;--teal:#087e84;--mint:#c4e9e3;--muted:#546f7e;--line:#d6e5e8;--paper:#f5f9fa;--white:#fff;--gold:#ce9555}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);font:16px/1.62 'Segoe UI',Arial,sans-serif;color:var(--ink)}a{color:#0c6677}a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #0a8c95;outline-offset:3px}.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:100;background:white;padding:12px}.topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;box-shadow:0 2px 10px #15435b0d}.nav-inner{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:9px 22px;gap:12px}.wordmark{font-weight:800;letter-spacing:.09em;font-size:.78rem;color:var(--deep);text-decoration:none;white-space:nowrap}.navlinks{display:flex;gap:8px;overflow:auto}.navlinks a{white-space:nowrap;text-decoration:none;font-weight:600;font-size:.82rem;padding:7px 10px;border-radius:8px;color:#345567}.navlinks a:hover{background:#e8f3f4}.container{max-width:1180px;margin:auto;padding:0 22px}.hero{background:linear-gradient(125deg,#073b52 0%,#0f6470 100%);color:white;padding:64px 0 58px}.hero .eyebrow{color:#c3f0e6}h1{font-size:clamp(2.2rem,4.5vw,3.7rem);line-height:1.1;max-width:18ch;letter-spacing:-.035em;margin:12px 0 17px}.hero p{font-size:1.1rem;max-width:63ch;color:#d9eeee;margin:0}.eyebrow{font-size:.76rem;letter-spacing:.11em;text-transform:uppercase;color:#217a81;font-weight:800;margin:0 0 8px}.stat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px}.stat{background:#ffffff17;border:1px solid #ffffff35;border-radius:12px;padding:18px}.stat strong{display:block;font-size:2rem;line-height:1.2;color:white}.stat span{font-size:.84rem;color:#d9eeee}.intro{padding:32px 0 12px}.intro-box{background:white;border:1px solid var(--line);border-radius:16px;padding:26px;display:grid;grid-template-columns:2fr 1fr;gap:26px}.intro h2{font-size:1.42rem;margin:0 0 10px}.intro p{margin:0 0 10px}.intro-note{background:#edf6f4;border-radius:12px;padding:18px;font-size:.91rem}.story-section{padding:40px 0 24px;scroll-margin-top:82px;border-bottom:1px solid var(--line)}.section-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:18px}.section-num{font-size:1rem;font-weight:800;color:white;background:#0a6777;border-radius:11px;min-width:50px;height:50px;display:grid;place-items:center}.section-head h2{font-size:clamp(1.6rem,2.5vw,2.25rem);line-height:1.2;letter-spacing:-.025em;margin:0 0 5px}.section-head p{color:var(--muted);margin:0}.insight{border-left:4px solid #2b9e9a;background:#eaf6f3;padding:14px 18px;border-radius:0 10px 10px 0;margin-bottom:20px}.insight strong{font-size:.84rem;text-transform:uppercase;letter-spacing:.05em}.insight p{margin:4px 0 0;max-width:90ch}.chart-stack{display:grid;grid-template-columns:1fr;gap:20px}.chart-card{background:white;border:1px solid var(--line);border-radius:15px;padding:clamp(16px,2.5vw,26px);box-shadow:0 5px 22px #17374c08;min-width:0;overflow:hidden}.chart-card h2{font-size:1.35rem;line-height:1.3;margin:0 0 10px;letter-spacing:-.015em}.chart-card>p:not(.source):not(.eyebrow){font-size:.94rem;max-width:96ch;color:#35576a;margin:0 0 16px}.chart-card .source{font-size:.78rem;max-width:100ch;color:#657b87;margin:18px 0 0}.chart{max-width:100%;overflow-x:auto}.vega-embed{max-width:100%}.slope-labels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;font-size:.85rem;color:#34586b}.slope-labels strong{font-size:.84rem}.slope-labels ol{margin:5px 0 0;padding-left:21px}.council-picker{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:14px 0}.council-picker select{background:white;color:#12364d;padding:10px 35px 10px 12px;border-radius:8px;border:1px solid #91b8c3;font:inherit;max-width:100%;min-width:250px}.takeaways{background:#0a394c;color:white;padding:48px 0;margin-top:44px}.takeaways h2{font-size:1.9rem;margin:0 0 14px}.takeaways-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.takeaway{border:1px solid #ffffff35;border-radius:12px;padding:18px;background:#ffffff0c}.takeaway p{margin:7px 0 0;color:#dcecee;font-size:.93rem}.meta{padding:38px 0 70px}.meta h2{font-size:1.45rem}.meta p{max-width:90ch;color:var(--muted)}.footer{font-size:.83rem;border-top:1px solid var(--line);padding:20px 0;color:#5a7784}@media(max-width:760px){.nav-inner{align-items:flex-start;flex-direction:column}.stat-grid,.takeaways-grid{grid-template-columns:1fr}.intro-box{grid-template-columns:1fr}.slope-labels{grid-template-columns:1fr}.hero{padding:42px 0}.chart-card{padding:14px}.story-section{scroll-margin-top:120px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.chart-error{padding:18px;border:1px solid #d19e9e;border-radius:8px;color:#8c2525;background:#fff6f6}
+
+/* Chart 1 — HD map layout and evidence-based annotations */
+.map-feature-grid{display:grid;grid-template-columns:minmax(0,1fr) 235px;gap:18px;align-items:start}
+.map-feature-canvas{min-width:0;overflow:hidden}
+.map-feature-canvas .chart{overflow-x:auto;max-width:100%}
+.map-feature-sidebar{background:#eef7f5;border:1px solid #d5e8e5;border-radius:12px;padding:18px;color:#173d4d}
+.map-feature-sidebar h3{font-size:1.1rem;margin:0 0 5px}
+.map-feature-caption{color:#506d79;font-size:.8rem;margin:0 0 16px}
+.map-metric{border-top:1px solid #c5ddd9;padding:14px 0;display:flex;flex-direction:column;gap:2px}
+.map-metric span{font-size:.84rem;color:#4c6b78}
+.map-metric strong{font-size:1.9rem;line-height:1.15;color:#0b6474}
+.map-feature-guide{font-size:.84rem;line-height:1.55;margin:12px 0 0}
+@media(max-width:1100px){.map-feature-grid{grid-template-columns:1fr}.map-feature-sidebar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.map-feature-sidebar h3,.map-feature-caption,.map-feature-guide{grid-column:1/-1}}
+@media(max-width:550px){.map-feature-sidebar{display:block}}
+
+/* Chart 2: interpretation panel and geographically focused inset */
+.map2-feature-grid{grid-template-columns:minmax(0,1fr) 225px}
+.metro-focus{margin-top:16px;padding:18px;background:#f2f8f8;border:1px solid #d4e6e8;border-radius:12px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:18px;align-items:start}
+.metro-focus h3{font-size:1.05rem;margin:0 0 6px}
+.metro-focus p{font-size:.88rem;line-height:1.55;color:#3d6070;margin:0}
+.metro-focus .chart{min-width:0}
+@media(max-width:1100px){.map2-feature-grid{grid-template-columns:1fr}.metro-focus{grid-template-columns:1fr}}
+
+/* Chart 2: obsolete inset hidden after collision-separated main map */
+.metro-focus{display:none!important}
+
+/* Chart 3 — Dorling cartogram and verified interpretation panel */
+.chart3-feature-grid{grid-template-columns:minmax(0,1fr) 235px;gap:18px}
+.chart3-card .map-feature-canvas{min-width:0}
+.chart3-card .chart{max-width:100%}
+.chart3-map-note{font-size:.79rem;color:#506d79;margin:8px 0 0;line-height:1.5;max-width:88ch}
+@media(max-width:1100px){.chart3-feature-grid{grid-template-columns:minmax(0,1fr)} }
+
+/* Chart 4: default concise overview; full 79-row chart on demand. */
+.heatmap-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:14px 0 8px;padding:12px 14px;background:#f0f7f7;border:1px solid #d4e6e8;border-radius:10px}
+.heatmap-toolbar p{margin:0;font-size:.88rem;color:#35576a;max-width:60ch}
+.heatmap-toolbar button{cursor:pointer;white-space:nowrap;background:#0a6777;color:#fff;border:1px solid #0a6777;border-radius:8px;padding:10px 16px;font:600 .9rem 'Segoe UI',Arial,sans-serif}
+.heatmap-toolbar button:hover{background:#075164}
+.heatmap-toolbar button:disabled{opacity:.65;cursor:progress}
+
+/* Chart 2 responsive geographic rendering: scale the Vega SVG in its grid cell.
+   SVG keeps its internal coordinate system, so council symbols, links and tooltip hit areas scale together. */
+.map2-feature-grid .map-feature-canvas{min-width:0;max-width:100%;overflow:visible}
+#map2{width:100%;max-width:100%;overflow:visible}
+#map2 .vega-embed{display:block;width:100%;max-width:100%;overflow:visible}
+#map2 .vega-embed svg{display:block;width:100%;max-width:100%;height:auto;overflow:visible}
+@media(max-width:1100px){.map2-feature-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Chart 2 — restore the findings card without reintroducing SVG scrolling. */
+.map2-feature-grid{grid-template-columns:minmax(0,1fr) 235px;gap:18px;align-items:start}
+.map2-feature-grid .map-feature-sidebar{
+  min-width:0;
+  width:100%;
+  box-sizing:border-box;
+  display:block;
+  position:relative;
+  z-index:1;
+  overflow-wrap:break-word;
+  padding:18px;
+  background:#eef7f5;
+  border:1px solid #d5e8e5;
+  border-radius:12px;
+  color:#173d4d;
+}
+.map2-feature-grid .map-feature-sidebar .map-metric{padding:14px 0;}
+.map2-feature-grid .map-feature-sidebar .map-feature-guide{line-height:1.55;}
+@media(max-width:950px){
+  .map2-feature-grid{grid-template-columns:minmax(0,1fr)}
+  .map2-feature-grid .map-feature-sidebar{max-width:100%;}
+}
+
+/* Chart 5: aligned narrative, clear emphasis, compact rankings */
+.slope-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:10px 0 18px}
+.slope-summary-item{padding:12px 15px;border:1px solid #d6e5e8;background:#f1f8f8;border-radius:10px}
+.slope-summary-item span{display:block;font-size:.77rem;color:#516f7e}
+.slope-summary-item strong{display:block;font-size:1.04rem;margin-top:4px}
+.slope-summary-item .rise{color:#087e84}.slope-summary-item .fall{color:#a95441}
+.slope-summary>p{grid-column:1/-1;font-size:.82rem;color:#526e7e;margin:0}
+.slope-labels>div{background:#f6fafb;padding:12px 15px;border:1px solid #e1ebed;border-radius:10px}
+.slope-labels ol{columns:1;line-height:1.5}
+@media(max-width:720px){.slope-summary{grid-template-columns:1fr}.slope-summary>p{grid-column:1}}
+
+/* Chart 10 — aligned group insights and responsive violin chart */
+.chart10-insights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:8px 0 18px}
+.chart10-insight{min-width:0;border:1px solid #d4e5e9;border-radius:10px;background:#f0f7f8;padding:13px 15px;display:flex;flex-direction:column;gap:5px}
+.chart10-insight span{color:#4e6a78;font-size:.79rem}
+.chart10-insight strong{font-size:1.14rem;color:#105569}
+.chart10-insight small{font-size:.78rem;line-height:1.5;color:#416476}
+.chart10-card .chart{width:100%;max-width:100%;overflow-x:auto}
+.chart10-card .chart10-guide{font-size:.81rem;color:#4b6c79;margin-top:10px;max-width:100ch}
+@media(max-width:700px){.chart10-insights{grid-template-columns:1fr}.chart10-card .chart{overflow-x:auto}}
+
+/* Library visits: compact evidence cards and accessible council selector */
+.bump-findings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0 12px}
+.bump-findings>div{background:#f0f7f8;border:1px solid #d4e8eb;border-radius:10px;padding:13px 15px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.bump-findings span{font-size:12px;color:#4a6878}.bump-findings strong{font-size:19px;color:#0e6e80}.bump-findings small{font-size:12px;line-height:1.5;color:#34586c}
+.bump-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:13px 0 6px}.bump-toolbar label{font-weight:700;font-size:14px}.bump-toolbar select{border:1px solid #8ebfc6;border-radius:7px;padding:9px 12px;background:#fff;color:#103d51;min-width:220px;max-width:100%}.bump-toolbar span{font-size:12px;color:#506d7d}
+@media(max-width:650px){.bump-findings{grid-template-columns:1fr}.bump-toolbar{align-items:stretch;flex-direction:column}.bump-toolbar select{width:100%}}
+
+/* Chart 8 (library rankings): use the card's width without page overflow. */
+#chart7{width:100%;min-width:0;max-width:100%;}
+#chart7 .vega-embed{max-width:100%;}
+
+/* Chart 9: restrained median summary matching existing findings strips */
+.ecdf-findings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0 13px}
+.ecdf-findings>div{min-width:0;background:#f0f7f8;border:1px solid #d3e7eb;border-radius:9px;padding:12px 14px;display:flex;flex-direction:column;gap:7px}
+.ecdf-findings span{font-size:12px;color:#46677b}.ecdf-findings strong{font-size:17px;color:#0c5266;line-height:1.35}.ecdf-findings small{font-size:12px;color:#46677b;line-height:1.45}
+@media(max-width:700px){.ecdf-findings{grid-template-columns:1fr}}
+
+/* Chart 12: selected-council original measurements */
+.selected-profile{margin:12px 0 14px;max-width:1040px;border:1px solid #d1e6e9;border-radius:10px;background:#f3f8f9;padding:13px 16px;color:#254d61;font-size:.88rem}
+.selected-profile strong{display:block;color:#083c52;font-size:1rem;margin-bottom:8px}
+.profile-measures{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.profile-measures div{border-left:2px solid #7db9c0;padding-left:10px}
+.profile-measures span{display:block;font-size:.77rem;color:#526e7e}
+.profile-measures b{font-size:.95rem;color:#12374a}
+@media(max-width:720px){.profile-measures{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Chart 12 legend: fully saturated swatches matching the selected council line. */
+/* Chart 12: external legend takes its own column; never overlays the lines. */
+.chart12-layout { display:grid; grid-template-columns:minmax(0,1fr) 126px; align-items:start; column-gap:18px; width:100%; max-width:100%; }
+.chart12-layout #chart12 { min-width:0; width:100%; max-width:100%; overflow:visible; }
+.chart12-layout .chart12-legend { position:static; width:126px; margin-top:48px; z-index:auto; background:white; font:12px/1.55 'Segoe UI',Arial,sans-serif; color:#16394a; padding:4px 0; }
+.chart12-legend strong { display:block; font-size:13px; margin-bottom:5px; }
+.chart12-legend-item { display:flex; align-items:center; gap:7px; white-space:nowrap; }
+.chart12-legend-swatch { display:inline-block; width:22px; height:4px; flex:0 0 22px; border-radius:2px; }
+@media (max-width:760px) { .chart12-layout { grid-template-columns:minmax(0,1fr); row-gap:8px; } .chart12-layout #chart12 { width:100%; } .chart12-layout .chart12-legend { margin-top:0; width:auto; display:flex; flex-wrap:wrap; align-items:center; column-gap:12px; row-gap:4px; } .chart12-legend strong { width:100%; } }

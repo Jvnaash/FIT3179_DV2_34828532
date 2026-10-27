@@ -1,0 +1,203 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Distribution of garbage collected per resident, by council group",
+    "fontSize": 16,
+    "color": "#153b50",
+    "anchor": "start"
+  },
+  "data": {
+    "url": "chart10_violin_density.csv"
+  },
+  "facet": {
+    "column": {
+      "field": "council_group",
+      "type": "nominal",
+      "sort": [
+        "Metro",
+        "Interface",
+        "Regional City",
+        "Large Shire",
+        "Small Shire"
+      ],
+      "title": null,
+      "header": {
+        "labelFontSize": 13,
+        "labelColor": "#14384e",
+        "labelPadding": 10
+      }
+    }
+  },
+  "spec": {
+    "width": 174,
+    "height": 350,
+    "layer": [
+      {
+        "mark": {
+          "type": "area",
+          "orient": "horizontal",
+          "color": "#2798a8",
+          "opacity": 0.82,
+          "stroke": "#16677d",
+          "strokeWidth": 1.2
+        },
+        "encoding": {
+          "x": {
+            "field": "left_density",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                -0.48,
+                0.48
+              ]
+            },
+            "axis": null
+          },
+          "x2": {
+            "field": "right_density"
+          },
+          "y": {
+            "field": "kg_per_resident",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                400
+              ]
+            },
+            "axis": {
+              "title": "Garbage collected (kg per resident)",
+              "values": [
+                0,
+                50,
+                100,
+                150,
+                200,
+                250,
+                300,
+                350,
+                400
+              ],
+              "grid": true,
+              "labelFontSize": 11,
+              "titleFontSize": 12,
+              "labelColor": "#153b50",
+              "titleColor": "#153b50",
+              "domain": true,
+              "ticks": true
+            }
+          },
+          "tooltip": [
+            {
+              "field": "council_group",
+              "title": "Council group"
+            },
+            {
+              "field": "number_of_councils",
+              "title": "Councils"
+            }
+          ]
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.kg_per_resident == 200"
+          }
+        ],
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "size": 135,
+          "color": "#123f57",
+          "stroke": "#ffffff",
+          "strokeWidth": 1.8
+        },
+        "encoding": {
+          "x": {
+            "datum": 0,
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                -0.48,
+                0.48
+              ]
+            },
+            "axis": null
+          },
+          "y": {
+            "field": "group_median",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                400
+              ]
+            },
+            "axis": {
+              "title": "Garbage collected (kg per resident)",
+              "values": [
+                0,
+                50,
+                100,
+                150,
+                200,
+                250,
+                300,
+                350,
+                400
+              ],
+              "grid": true,
+              "labelFontSize": 11,
+              "titleFontSize": 12,
+              "labelColor": "#153b50",
+              "titleColor": "#153b50",
+              "domain": true,
+              "ticks": true
+            }
+          },
+          "tooltip": [
+            {
+              "field": "council_group",
+              "title": "Council group"
+            },
+            {
+              "field": "number_of_councils",
+              "title": "Councils",
+              "format": ",.0f"
+            },
+            {
+              "field": "group_median",
+              "title": "Median (kg/resident)",
+              "format": ".1f"
+            },
+            {
+              "field": "observed_min",
+              "title": "Minimum observed (kg)",
+              "format": ".1f"
+            },
+            {
+              "field": "observed_max",
+              "title": "Maximum observed (kg)",
+              "format": ".1f"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "x": "independent"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "white",
+    "axis": {
+      "gridColor": "#e4eef2"
+    }
+  }
+}

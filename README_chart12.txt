@@ -1,0 +1,1 @@
+Chart 12: parallel coordinates, data from 2024-25 LGPRF. 74 complete councils. Independent min-max scaling for each indicator; selection dropdown highlights one council. Open index.html with Live Server.

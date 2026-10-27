@@ -1,0 +1,25 @@
+council,financial_year,rank,visits_per_resident,previous_rank,latest_rank,rank_change,movement
+Borough of Queenscliffe,2023–24,2,8.368,2,1,1,Climbed
+Borough of Queenscliffe,2024–25,1,8.846,2,1,1,Climbed
+Hobsons Bay City,2023–24,1,9.339,1,2,-1,Dropped
+Hobsons Bay City,2024–25,2,6.305,1,2,-1,Dropped
+Mount Alexander Shire,2023–24,16,4.825,16,3,13,Climbed
+Mount Alexander Shire,2024–25,3,6.227,16,3,13,Climbed
+Yarra City,2023–24,4,6.128,4,4,0,Unchanged
+Yarra City,2024–25,4,6.215,4,4,0,Unchanged
+Melbourne City,2023–24,3,6.519,3,5,-2,Dropped
+Melbourne City,2024–25,5,6.166,3,5,-2,Dropped
+Bass Coast Shire,2023–24,11,5.266,11,6,5,Climbed
+Bass Coast Shire,2024–25,6,5.605,11,6,5,Climbed
+Alpine Shire,2023–24,6,5.747,6,7,-1,Dropped
+Alpine Shire,2024–25,7,5.563,6,7,-1,Dropped
+Boroondara City,2023–24,10,5.271,10,8,2,Climbed
+Boroondara City,2024–25,8,5.462,10,8,2,Climbed
+Pyrenees Shire,2023–24,37,3.334,37,18,19,Climbed
+Pyrenees Shire,2024–25,18,4.804,37,18,19,Climbed
+Knox City,2023–24,34,3.584,34,19,15,Climbed
+Knox City,2024–25,19,4.693,34,19,15,Climbed
+Stonnington City,2023–24,38,3.219,38,55,-17,Dropped
+Stonnington City,2024–25,55,2.601,38,55,-17,Dropped
+Wellington Shire,2023–24,8,5.35,8,17,-9,Dropped
+Wellington Shire,2024–25,17,4.869,8,17,-9,Dropped

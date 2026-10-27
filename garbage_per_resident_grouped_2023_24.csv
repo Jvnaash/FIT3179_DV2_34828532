@@ -1,0 +1,80 @@
+council,council_group,financial_year,garbage_kg_per_resident,population,garbage_tonnes
+Alpine Shire,Small Shire,2023–24,96.64,13240,1279.5
+Ararat Rural City,Small Shire,2023–24,178.98,11761,2105.0
+Ballarat City,Regional City,2023–24,184.39,119109,21962.0
+Banyule City,Metro,2023–24,120.26,129895,15621.0
+Bass Coast Shire,Large Shire,2023–24,142.23,42888,6099.75
+Baw Baw Shire,Large Shire,2023–24,187.21,61301,11476.0
+Bayside City,Metro,2023–24,109.42,104305,11412.62
+Benalla Rural City,Small Shire,2023–24,157.86,14544,2295.98
+Boroondara City,Metro,2023–24,97.96,174774,17120.0
+Borough of Queenscliffe,Small Shire,2023–24,226.52,3265,739.58
+Brimbank City,Metro,2023–24,212.02,197185,41807.0
+Buloke Shire,Small Shire,2023–24,376.24,6052,2277.0
+Campaspe Shire,Large Shire,2023–24,198.26,38592,7651.35
+Cardinia Shire,Interface,2023–24,177.8,129157,22964.34
+Casey City,Interface,2023–24,174.04,397752,69226.13
+Central Goldfields Shire,Small Shire,2023–24,172.34,13601,2343.94
+Colac Otway Shire,Large Shire,2023–24,178.71,22366,3997.0
+Corangamite Shire,Large Shire,2023–24,125.05,15921,1991.0
+Darebin City,Metro,2023–24,150.98,156322,23602.0
+East Gippsland Shire,Large Shire,2023–24,172.21,49567,8535.71
+Frankston City,Metro,2023–24,179.83,143111,25735.0
+Gannawarra Shire,Small Shire,2023–24,220.54,10442,2302.92
+Glen Eira City,Metro,2023–24,131.83,156121,20582.1
+Glenelg Shire,Large Shire,2023–24,176.44,20030,3534.0
+Golden Plains Shire,Large Shire,2023–24,193.32,26058,5037.46
+Greater Bendigo City,Regional City,2023–24,163.27,125225,20445.0
+Greater Dandenong City,Metro,2023–24,176.02,163533,28785.0
+Greater Geelong City,Regional City,2023–24,197.04,285890,56331.0
+Greater Shepparton,Regional City,2023–24,154.43,69786,10777.0
+Hepburn Shire,Small Shire,2023–24,169.99,16788,2853.79
+Hindmarsh Shire,Small Shire,2023–24,310.3,5543,1720.0
+Hobsons Bay City,Metro,2023–24,182.14,93986,17118.5
+Horsham Rural City,Regional City,2023–24,186.2,20376,3793.96
+Hume City,Interface,2023–24,204.63,265021,54231.38
+Indigo Shire,Small Shire,2023–24,126.5,17684,2237.0
+Kingston City,Metro,2023–24,165.26,163677,27049.0
+Knox City,Metro,2023–24,102.25,162013,16566.22
+Latrobe City,Regional City,2023–24,207.66,78408,16282.4
+Loddon Shire,Small Shire,2023–24,245.51,7752,1903.16
+Macedon Ranges Shire,Large Shire,2023–24,115.24,53307,6143.0
+Manningham City,Metro,2023–24,85.48,129409,11061.8
+Mansfield Shire,Small Shire,2023–24,242.83,10597,2573.23
+Maribyrnong City,Metro,2023–24,179.39,92956,16675.0
+Maroondah City,Metro,2023–24,151.45,117953,17864.0
+Melbourne City,Metro,2023–24,167.03,176580,29495.0
+Melton City,Interface,2023–24,177.6,212107,37669.47
+Merri-bek City,Metro,2023–24,145.49,181665,26431.0
+Mildura Rural City,Regional City,2023–24,100.1,57769,5782.4
+Mitchell Shire,Large Shire,2023–24,191.56,56138,10754.0
+Moira Shire,Large Shire,2023–24,140.27,30841,4326.0
+Monash City,Metro,2023–24,116.36,202342,23545.03
+Moonee Valley City,Metro,2023–24,179.05,126884,22718.84
+Moorabool Shire,Large Shire,2023–24,184.19,39866,7343.0
+Mornington Peninsula Shire,Interface,2023–24,174.84,171210,29934.13
+Mount Alexander Shire,Large Shire,2023–24,159.41,20633,3289.07
+Moyne Shire,Large Shire,2023–24,128.73,17652,2272.41
+Murrindindi Shire,Small Shire,2023–24,185.7,15532,2884.32
+Nillumbik Shire,Interface,2023–24,105.38,63434,6684.64
+Northern Grampians Shire,Small Shire,2023–24,216.94,11856,2572.01
+Port Phillip City,Metro,2023–24,164.8,110252,18170.0
+Pyrenees Shire,Small Shire,2023–24,162.13,7759,1258.0
+South Gippsland Shire,Large Shire,2023–24,144.49,31051,4486.52
+Southern Grampians Shire,Large Shire,2023–24,136.92,16393,2244.5
+Stonnington City,Metro,2023–24,169.67,111513,18920.0
+Strathbogie Shire,Small Shire,2023–24,93.89,11684,1097.0
+Surf Coast Shire,Large Shire,2023–24,122.12,39832,4864.2
+Swan Hill Rural City,Large Shire,2023–24,250.53,21166,5302.72
+Towong Shire,Small Shire,2023–24,131.83,6224,820.52
+Wangaratta Rural City,Regional City,2023–24,157.3,30139,4741.0
+Warrnambool City,Regional City,2023–24,132.91,35931,4775.64
+Wellington Shire,Large Shire,2023–24,167.14,46358,7748.12
+West Wimmera Shire,Small Shire,2023–24,261.93,3910,1024.14
+Whitehorse City,Metro,2023–24,138.91,178334,24772.88
+Whittlesea City,Interface,2023–24,184.37,248284,45775.77
+Wodonga City,Regional City,2023–24,113.43,44629,5062.06
+Wyndham City,Interface,2023–24,179.96,329496,59296.0
+Yarra City,Metro,2023–24,132.97,98265,13066.04
+Yarra Ranges Shire,Interface,2023–24,134.36,159744,21463.73
+Yarriambiack Shire,Small Shire,2023–24,282.43,6374,1800.22

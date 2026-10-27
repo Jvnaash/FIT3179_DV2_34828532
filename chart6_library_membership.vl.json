@@ -1,0 +1,212 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Compare 10 highest and 10 lowest Victorian council library membership rates in 2024–25, indicator LB7.",
+  "data": {
+    "url": "library_membership_selected_2024_25.csv"
+  },
+  "facet": {
+    "column": {
+      "field": "category",
+      "type": "nominal",
+      "sort": [
+        "Highest 10",
+        "Lowest 10"
+      ],
+      "header": {
+        "title": null,
+        "labelFontSize": 15,
+        "labelFontWeight": "bold",
+        "labelPadding": 9
+      }
+    }
+  },
+  "spec": {
+    "width": 395,
+    "height": 350,
+    "encoding": {
+      "y": {
+        "field": "council",
+        "type": "nominal",
+        "sort": {
+          "field": "membership_pct",
+          "order": "descending"
+        },
+        "axis": {
+          "title": null,
+          "labelFontSize": 10,
+          "labelLimit": 160,
+          "labelPadding": 6
+        }
+      },
+      "x": {
+        "field": "membership_pct",
+        "type": "quantitative",
+        "scale": {
+          "domain": [
+            0,
+            65
+          ]
+        },
+        "axis": {
+          "title": "Library members (% of council population)",
+          "grid": true,
+          "tickCount": 6
+        }
+      },
+      "tooltip": [
+        {
+          "field": "council",
+          "type": "nominal",
+          "title": "Council"
+        },
+        {
+          "field": "council_group",
+          "type": "nominal",
+          "title": "Council group"
+        },
+        {
+          "field": "membership_pct",
+          "type": "quantitative",
+          "title": "Library membership (%)",
+          "format": ".1f"
+        },
+        {
+          "field": "financial_year",
+          "type": "nominal",
+          "title": "Financial year"
+        }
+      ]
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "rule",
+          "strokeWidth": 2,
+          "color": "#b7d9e2"
+        },
+        "encoding": {
+          "x": {
+            "datum": 0
+          },
+          "x2": {
+            "field": "membership_pct"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "size": 105
+        },
+        "encoding": {
+          "color": {
+            "field": "council_group",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Metro",
+                "Interface",
+                "Regional City",
+                "Large Shire",
+                "Small Shire"
+              ],
+              "range": [
+                "#116f83",
+                "#3d9ca8",
+                "#6b82ad",
+                "#bd8654",
+                "#819a78"
+              ]
+            },
+            "legend": {
+              "title": "Council group",
+              "orient": "bottom",
+              "columns": 3,
+              "labelFontSize": 12,
+              "titleFontSize": 12,
+              "symbolSize": 105,
+              "labelLimit": 135,
+              "rowPadding": 2
+            }
+          },
+          "opacity": {
+            "value": 1
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.council === 'Yarra City'"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "fontSize": 11,
+          "fontWeight": "bold",
+          "color": "#17465a",
+          "align": "right",
+          "baseline": "bottom",
+          "dx": -12,
+          "dy": -8
+        },
+        "encoding": {
+          "x": {
+            "field": "membership_pct",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "membership_pct",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.council === 'Buloke Shire'"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "fontSize": 11,
+          "fontWeight": "bold",
+          "color": "#17465a",
+          "align": "left",
+          "baseline": "bottom",
+          "dx": 12,
+          "dy": -8
+        },
+        "encoding": {
+          "x": {
+            "field": "membership_pct",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "membership_pct",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        }
+      }
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#183a4e",
+      "titleColor": "#183a4e",
+      "gridColor": "#e7eef2"
+    },
+    "background": "white"
+  }
+}

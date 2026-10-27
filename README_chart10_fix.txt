@@ -1,0 +1,1 @@
+Chart 10 fix: precomputed Gaussian kernel density per council group (not Vega-Lite density transform); 5 panels, one per council group. The original data remain unchanged in garbage_per_resident_grouped_2023_24.csv. Start Live Server with index.html.

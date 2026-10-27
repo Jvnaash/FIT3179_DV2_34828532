@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Proportional circles for tonnes of garbage collected per council resident in 2023–24, based on Victorian Local Government Annual Survey waste data. Locations are representative points within council polygons.",
+  "width": 820,
+  "height": 590,
+  "background": "#ffffff",
+  "projection": {
+    "type": "mercator"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "vic_council_waste_2024_25.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#eef3f5",
+        "stroke": "#8c9eac",
+        "strokeWidth": 0.7
+      }
+    },
+    {
+      "data": {
+        "url": "garbage_2023_24_by_council.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "color": "#007f91",
+        "opacity": 0.72,
+        "stroke": "#ffffff",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "kg_per_resident",
+          "type": "quantitative",
+          "title": "Garbage collected (kg per resident)",
+          "scale": {
+            "type": "linear",
+            "domain": [
+              0,
+              400
+            ],
+            "range": [
+              20,
+              1600
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "title": "Garbage per resident (kg)",
+            "values": [
+              100,
+              200,
+              300,
+              400
+            ],
+            "symbolFillColor": "#007f91",
+            "symbolStrokeColor": "#ffffff",
+            "titleLimit": 250,
+            "labelFontSize": 12,
+            "titleFontSize": 12,
+            "columns": 4
+          }
+        },
+        "tooltip": [
+          {
+            "field": "council",
+            "type": "nominal",
+            "title": "Council"
+          },
+          {
+            "field": "kg_per_resident",
+            "type": "quantitative",
+            "title": "Garbage per resident (kg)",
+            "format": ",.1f"
+          },
+          {
+            "field": "garbage_tonnes",
+            "type": "quantitative",
+            "title": "Garbage collected (tonnes)",
+            "format": ",.1f"
+          },
+          {
+            "field": "population",
+            "type": "quantitative",
+            "title": "Population",
+            "format": ","
+          },
+          {
+            "field": "year",
+            "type": "nominal",
+            "title": "Year"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial"
+  }
+}

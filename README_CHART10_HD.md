@@ -1,0 +1,1 @@
+Chart 10: five violin facets widened 145 to 174; median markers added from original council dataset; highest and lowest medians shown in interpretation cards; smoothing caveat clarified. Browser rendering must be checked. All other chart JSON unchanged.

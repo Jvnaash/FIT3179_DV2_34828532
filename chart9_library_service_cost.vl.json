@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "What share of councils spend at or below each library cost?",
+    "subtitle": "Empirical cumulative distribution • 2024–25 • one step per council",
+    "anchor": "start",
+    "fontSize": 16,
+    "color": "#153b50"
+  },
+  "width": 790,
+  "height": 405,
+  "data": {
+    "url": "library_cost_ecdf_2024_25.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "cost_per_resident",
+      "type": "quantitative",
+      "title": "Library service cost per resident (AUD)",
+      "scale": {
+        "domain": [
+          0,
+          90
+        ]
+      },
+      "axis": {
+        "format": "$,.0f",
+        "tickCount": 10
+      }
+    },
+    "y": {
+      "field": "cum_percent",
+      "type": "quantitative",
+      "title": "Share of councils in group (%)",
+      "scale": {
+        "domain": [
+          0,
+          102
+        ]
+      },
+      "axis": {
+        "format": ".0f",
+        "tickCount": 6,
+        "values": [
+          0,
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      }
+    },
+    "color": {
+      "field": "council_group",
+      "type": "nominal",
+      "title": "Council group",
+      "scale": {
+        "domain": [
+          "Metro",
+          "Interface",
+          "Regional City",
+          "Large Shire",
+          "Small Shire"
+        ],
+        "range": [
+          "#08768b",
+          "#52a4b4",
+          "#9476b5",
+          "#d47c49",
+          "#759582"
+        ]
+      },
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal",
+        "columns": 3
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "step-after",
+        "strokeWidth": 2.5,
+        "opacity": 0.93
+      },
+      "encoding": {
+        "detail": {
+          "field": "council_group",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 95,
+        "opacity": 0.002
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "council_group",
+            "type": "nominal",
+            "title": "Council group"
+          },
+          {
+            "field": "council",
+            "type": "nominal",
+            "title": "Council at step"
+          },
+          {
+            "field": "cost_per_resident",
+            "type": "quantitative",
+            "title": "Cost per resident (AUD)",
+            "format": ".2f"
+          },
+          {
+            "field": "councils_at_or_below",
+            "type": "quantitative",
+            "title": "Councils at or below",
+            "format": ".0f"
+          },
+          {
+            "field": "group_total",
+            "type": "quantitative",
+            "title": "Councils in group",
+            "format": ".0f"
+          },
+          {
+            "field": "cum_percent",
+            "type": "quantitative",
+            "title": "Cumulative share (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "gridColor": "#e4eef2",
+      "labelColor": "#183e50",
+      "titleColor": "#183e50",
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#183e50",
+      "titleColor": "#183e50"
+    }
+  }
+}

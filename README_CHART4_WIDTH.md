@@ -1,0 +1,1 @@
+Chart 4 layout update: increased desktop heatmap width to up to 830px, dynamically clamped to chart-card space accounting for council labels. Top-25/all-79 toggle unchanged. Check browser at normal and small laptop widths.

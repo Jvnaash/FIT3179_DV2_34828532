@@ -1,0 +1,173 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Two-panel slope chart showing seven largest gains and losses. Highlighted council lines are identified by aligned callouts above each panel, avoiding collisions with measured endpoints.",
+  "data": {
+    "url": "waste_diversion_change_2020_2025.csv"
+  },
+  "facet": {
+    "column": {
+      "field": "category",
+      "type": "nominal",
+      "sort": [
+        "7 largest increases",
+        "7 largest decreases"
+      ],
+      "title": null,
+      "header": {
+        "labelFontSize": 14,
+        "labelFontWeight": "bold",
+        "labelColor": "#15374c"
+      }
+    }
+  },
+  "spec": {
+    "width": 405,
+    "height": 290,
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "ordinal",
+        "sort": [
+          "2020–21",
+          "2024–25"
+        ],
+        "axis": {
+          "title": null,
+          "labelAngle": 0,
+          "labelFontSize": 12,
+          "labelPadding": 8
+        }
+      },
+      "y": {
+        "field": "diversion_pct",
+        "type": "quantitative",
+        "scale": {
+          "domain": [
+            0,
+            85
+          ]
+        },
+        "axis": {
+          "title": "Waste diverted from landfill (%)",
+          "grid": true,
+          "tickCount": 6
+        }
+      },
+      "detail": {
+        "field": "council"
+      },
+      "color": {
+        "field": "category",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "7 largest increases",
+            "7 largest decreases"
+          ],
+          "range": [
+            "#168b88",
+            "#ca735c"
+          ]
+        },
+        "legend": null
+      },
+      "tooltip": [
+        {
+          "field": "council",
+          "type": "nominal",
+          "title": "Council"
+        },
+        {
+          "field": "group",
+          "type": "nominal",
+          "title": "Council group"
+        },
+        {
+          "field": "start_pct",
+          "type": "quantitative",
+          "format": ".1f",
+          "title": "2020–21 diversion (%)"
+        },
+        {
+          "field": "end_pct",
+          "type": "quantitative",
+          "format": ".1f",
+          "title": "2024–25 diversion (%)"
+        },
+        {
+          "field": "change_pp",
+          "type": "quantitative",
+          "format": "+.1f",
+          "title": "Change (percentage points)"
+        }
+      ]
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2.1
+        },
+        "encoding": {
+          "opacity": {
+            "condition": {
+              "test": "datum.council === 'Ararat Rural City' || datum.council === 'Darebin City'",
+              "value": 1
+            },
+            "value": 0.3
+          },
+          "strokeWidth": {
+            "condition": {
+              "test": "datum.council === 'Ararat Rural City' || datum.council === 'Darebin City'",
+              "value": 4
+            },
+            "value": 2
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "stroke": "white",
+          "strokeWidth": 0.8
+        },
+        "encoding": {
+          "size": {
+            "condition": {
+              "test": "datum.council === 'Ararat Rural City' || datum.council === 'Darebin City'",
+              "value": 130
+            },
+            "value": 68
+          },
+          "opacity": {
+            "condition": {
+              "test": "datum.council === 'Ararat Rural City' || datum.council === 'Darebin City'",
+              "value": 1
+            },
+            "value": 0.5
+          }
+        }
+      }
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "y": "shared"
+    }
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#244d60",
+      "titleColor": "#244d60",
+      "gridColor": "#e2eef2"
+    },
+    "facet": {
+      "spacing": 22
+    }
+  }
+}
