@@ -1,1 +1,0 @@
-Chart 11: widened beeswarm from 760 to 880px, reduced height from 530 to 500px, slightly enlarged point marks, and inserted verified findings: Metro median 68.5 (n=22), Large Shire median 48 (n=19). Existing marks, dataset, scales, group positioning and tooltips retained. Browser rendering must still be verified.
