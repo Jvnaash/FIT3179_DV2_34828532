@@ -1,1 +1,0 @@
-Chart 5 rendering repair: restored the verified earlier Chart 5 specification after the new hover-selection implementation prevented rendering. Baseline bold lines, summary cards, 14 council rankings, and two-year tooltips remain available. Enhanced hover fade is NOT included. All other files were retained from the preceding version.
