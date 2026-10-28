@@ -1,1 +1,0 @@
-Chart 9 replacement: five-group library service-cost ECDF. Open index.html with Live Server. Vega-Lite spec chart9_library_service_cost.vl.json uses library_cost_ecdf_2024_25.csv, derived by ranking original library_service_cost_2024_25.csv within each council group. Curves show cumulative % at/below cost; no inference about quality. Other charts unchanged.
