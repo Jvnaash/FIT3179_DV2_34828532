@@ -1,1 +1,0 @@
-Priority fixes: Chart 5 removes overlapping endpoint labels and adds a ranked text key; Chart 8 replaces misleading boxplot summary hover data with precomputed Tukey boxes and council-only tooltips; Chart 12 uses a styled accessible HTML dropdown, with other council lines retained in faint background. Open index.html with Live Server. Browser testing still required.
