@@ -1,1 +1,0 @@
-Chart 12 selected council line and points now use the council-group palette. Full-opacity custom legend swatches match those colours, while background lines remain translucent. Other visualisations remain unchanged.
