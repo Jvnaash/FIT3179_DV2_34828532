@@ -1,1 +1,0 @@
-Chart 12 layout adjustment: plot now uses Vega-Lite container width inside the left grid column, and the high-contrast legend occupies a fixed 126px right column with an 18px gap. On narrower screens the legend follows the plot. Original values, colours, tooltips, council picker and all other charts remain unchanged. Verify in Live Server.
