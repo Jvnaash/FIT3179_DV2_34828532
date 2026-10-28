@@ -1,1 +1,0 @@
-Chart 4 readability update: heatmap width 680px (previously 360px); row step 17px; 11px council labels; expanded colour legend. No data, other charts, or interactions changed. Test with VS Code Live Server; on narrow screens the chart may scroll horizontally.
